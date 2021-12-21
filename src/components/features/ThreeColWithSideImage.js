@@ -7,6 +7,7 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 import { SectionDescription } from "components/misc/Typography.js";
 
 import defaultCardImage from "images/shield-icon.svg";
+import { PrimaryButton as PrimaryButtonBase} from "components/misc/Buttons";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 
@@ -18,6 +19,11 @@ import ReliableIconImage from "images/reliable-icon.svg";
 import SimpleIconImage from "images/simple-icon.svg";
 
 const Container = tw.div`relative`;
+
+const PrimaryButton = styled(PrimaryButtonBase)(props => [
+  tw`mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0`,
+  props.buttonRounded && tw`rounded-full`
+]);
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
@@ -58,7 +64,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({ cards = null, heading = "heading", subheading = "Features",
+export default ({ cards = null, heading = "heading", subheading = "Features", button = "", buttonUrl = "/",
                   description = "We recruit the most professional and capable teachers to cultivate your children's interests in learning." }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -107,6 +113,7 @@ export default ({ cards = null, heading = "heading", subheading = "Features",
             </Column>
           ))} </> : <>{}</>
        }
+       <PrimaryButton buttonRounded={true}  as="a" href="/teachers"> {button} </PrimaryButton>
       </ThreeColumnContainer>
       <DecoratorBlob />
     </Container>

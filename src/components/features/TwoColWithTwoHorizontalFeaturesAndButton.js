@@ -1,4 +1,5 @@
 import React from "react";
+import {animateScroll as scroll} from "react-scroll";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -10,7 +11,7 @@ import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefc
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
+const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-6/12 flex-shrink-0 relative`;
 const TextColumn = styled(Column)(props => [
@@ -37,14 +38,14 @@ const Heading = tw(
 const Description = tw.p`mt-8 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const Features = tw.div`mx-auto md:mx-0 flex flex-col lg:flex-row max-w-xs lg:max-w-none`;
-const Feature = tw.div`mt-10 lg:mt-8 flex items-center md:items-start flex-col md:mr-8 last:mr-0`;
+const Feature = tw.div`mt-10 min-w-50 lg:mt-8 flex items-center md:items-start flex-col md:mr-8 last:mr-0`;
 
 const FeatureHeadingContainer = tw.div`flex items-center`;
 const FeatureIconContainer = styled.div`
   ${tw`mx-auto inline-block border border-primary-500 text-primary-400 text-center rounded p-2 flex-shrink-0`}
   ${props => [
     props.iconRoundedFull && tw`rounded-full`,
-    props.iconFilled && tw`border-0 bg-primary-500 text-gray-100`
+    props.iconFilled && tw`border-0 bg-primary-500 text-gray-100`,
   ]}
   svg {
     ${tw`w-5 h-5`}
@@ -76,7 +77,7 @@ export default ({
   imageShadow = false,
   showDecoratorBlob = false,
   textOnLeft = true,
-  features = null,
+  features = [ [] ],
   iconRoundedFull = true,
   iconFilled = true,
   iconContainerCss = null
@@ -116,9 +117,12 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <Features>
-              {features.map((feature, index) => (
-                <Feature key={index}>
+            {features.map(row => {
+              return (
+                <Features>
+              {row.map(feature => {
+                return (
+                <Feature key={feature}>
                   <FeatureHeadingContainer>
                     <FeatureIconContainer
                       iconFilled={iconFilled}
@@ -131,12 +135,23 @@ export default ({
                   </FeatureHeadingContainer>
                   <FeatureDescription>{feature.description}</FeatureDescription>
                 </Feature>
-              ))}
+              )})}
+              </Features>
+              )
+            })}
+            <Features>
+              <Feature button={true}>
+                <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
+                  {primaryButtonText}
+                </PrimaryButton>
+              </Feature>
+              <Feature>
+                <PrimaryButton buttonRounded={buttonRounded} as="a" onClick={() => scroll.scrollToTop()}>
+                Back to the top
+                </PrimaryButton>
+              </Feature>
             </Features>
-
-            <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
-              {primaryButtonText}
-            </PrimaryButton>
+            {/* &emsp; &emsp; &emsp; &emsp; &emsp; */}
           </TextContent>
         </TextColumn>
       </TwoColumn>

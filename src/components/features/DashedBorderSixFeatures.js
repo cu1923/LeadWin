@@ -8,6 +8,7 @@ import { SectionHeading } from "components/misc/Headings.js";
 import defaultCardImage from "../../images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-blob-3.svg";
+import { PrimaryButton as PrimaryButtonBase} from "components/misc/Buttons";
 
 import SupportIconImage from "../../images/support-icon.svg";
 import ShieldIconImage from "../../images/shield-icon.svg";
@@ -53,7 +54,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default () => {
+export default ({ cards = null, heading = "heading", button = "button", buttonUrl="/"}) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component):
    *  1) imageSrc - the image shown at the top of the card
@@ -62,7 +63,7 @@ export default () => {
    *  If a key for a particular card is not provided, a default value is used
    */
 
-  const cards = [
+  const defaultCards = [
     {
       imageSrc: ShieldIconImage,
       title: "Ads Management",
@@ -78,7 +79,7 @@ export default () => {
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>Our Professional <span tw="text-primary-400">Services</span></Heading>
+        <Heading> {heading} </Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>

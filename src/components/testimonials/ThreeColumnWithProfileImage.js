@@ -31,8 +31,7 @@ export default ({
     <Container>
       <ContentWithPaddingXl>
         {subheading && <Subheading>{subheading}</Subheading>}
-        <Heading>{heading}</Heading>
-        
+        <Heading>{heading}</Heading> 
           {testimonials.map(row => {
               return (
               <Testimonials>
@@ -49,7 +48,6 @@ export default ({
               })})
               </Testimonials>)
             })}
-        
       </ContentWithPaddingXl>
 
       <DecoratorBlob1 />

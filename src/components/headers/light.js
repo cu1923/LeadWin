@@ -10,9 +10,36 @@ import logo from "../../images/logo.svg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
+const NavbarDropdownContent = styled.div`
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 97%, rgba(0, 0, 0, 0) 3%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+    padding: 12px 6px;
+    padding-left: 15px;
+    z-index: 1;  
+    line-height: 2.5;
+  `;
+
+const NavbarDropdown = styled.div`
+    position: relative;
+    display: inline-block;
+    &:hover ${NavbarDropdownContent} {
+      display: block;
+    }
+  `;
+
+const DropdownLink = tw.a`
+    text-lg my-2 lg:text-xs lg:my-0
+    font-semibold tracking-wide transition duration-300
+    pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-400
+`;
+
+
 const Header = tw.header`
   flex justify-between items-center
-  max-w-screen-xl mx-auto
+  max-w-screen-xl mx-auto pb-24
 `;
 
 export const NavLinks = tw.div`inline-block`;
@@ -72,16 +99,28 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/about">About</NavLink>
-      <NavLink href="/programs">Programs</NavLink>
-      <NavLink href="/teachers"> Teachers </NavLink>
-      <NavLink href="/demo"> Demo Classes</NavLink>
-      <NavLink href="/contact-us"> Contact Us</NavLink>
-      {/* <NavLink href="/login" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink> */}
-    </NavLinks>
+    <NavLink href="/about">About</NavLink>
+    <NavLink>
+      <NavbarDropdown>
+        Programs
+        <NavbarDropdownContent>
+          <DropdownLink href="/academic"> Academic Program </DropdownLink> &ensp;
+          <DropdownLink href="/enrichment">Enrichment Program</DropdownLink> <br></br>
+          <DropdownLink href="/summercamp">Summer Camp</DropdownLink> &ensp; &ensp; &ensp;
+          <DropdownLink href="/privatetutor">Private Tutoring</DropdownLink> <br></br>
+          <DropdownLink href="/pretest">Pre-test</DropdownLink> &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;
+          <DropdownLink href="/collegeprep">College Prep</DropdownLink> <br></br>
+        </NavbarDropdownContent>
+      </NavbarDropdown>
+    </NavLink>
+    <NavLink href="/teachers"> Teachers </NavLink>
+    <NavLink href="/demo"> Demo Classes</NavLink>
+    <NavLink href="/contact-us"> Contact Us</NavLink>
+    {/* <NavLink href="/login" tw="lg:ml-12!">
+      Login
+    </NavLink>
+    <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink> */}
+  </NavLinks>
   ];
 
   const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();

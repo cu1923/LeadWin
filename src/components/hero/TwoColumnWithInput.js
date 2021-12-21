@@ -53,7 +53,7 @@ export default ({ roundedHeaderButton }) => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              <span tw="text-primary-400"> Leading </span> Education <br></br>
+              <span tw="text-primary-400 font-display-1"> Leading </span> Education <br></br>
               <span tw="opacity-0"> On T</span> On The Way To <span tw="text-primary-400"> Win  </span>
             </Heading>
             <Paragraph>

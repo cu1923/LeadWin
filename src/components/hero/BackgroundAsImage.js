@@ -1,13 +1,42 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
+import image from "../../images/bg8.jpeg";
+
+const NavbarDropdownContent = styled.div`
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background: linear-gradient(0deg, rgba(100, 21, 255, 0.8) 97%, rgba(0, 0, 0, 0) 3%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+    padding: 12px 6px;
+    padding-left: 15px;
+    z-index: 1;  
+    line-height: 2.5;
+  `;
+
+const NavbarDropdown = styled.div`
+    position: relative;
+    display: inline-block;
+    &:hover ${NavbarDropdownContent} {
+      display: block;
+    }
+  `;
+
+const DropdownLink = tw.a`
+    text-lg my-2 lg:text-xs lg:my-0
+    font-semibold tracking-wide transition duration-300
+    pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-400
+`;
 
 const StyledHeader = styled(Header)`
-  ${tw`pt-8 max-w-none`}
+  ${tw`pt-10 max-w-none`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
@@ -17,9 +46,9 @@ const StyledHeader = styled(Header)`
 `;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
-  background-image: url("https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
+  background-image: url(${image});
+  opacity:0.8;
 `;
-
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
 
 const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
@@ -58,24 +87,28 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
-        About
-      </NavLink>
-      <NavLink href="#">
-        Blog
-      </NavLink>
-      <NavLink href="#">
-        Locations
-      </NavLink>
-      <NavLink href="#">
-        Pricing
-      </NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="/#">
-        Hire Us
-      </PrimaryLink>
-    </NavLinks>
+    <NavLink href="/about">About</NavLink>
+    <NavLink>
+      <NavbarDropdown>
+        Programs
+        <NavbarDropdownContent>
+          <DropdownLink href="/academic"> Academic Program </DropdownLink>  <br></br>
+          <DropdownLink href="/enrichment">Enrichment Program</DropdownLink> <br></br>
+          <DropdownLink href="/summercamp">Summer Camp</DropdownLink> <br></br>
+          <DropdownLink href="/privatetutor">Private Tutoring</DropdownLink> <br></br>
+          <DropdownLink href="/pretest">Pre-test</DropdownLink> <br></br>
+          <DropdownLink href="/collegeprep">College Prep</DropdownLink> <br></br>
+        </NavbarDropdownContent>
+      </NavbarDropdown>
+    </NavLink>
+    <NavLink href="/teachers"> Teachers </NavLink>
+    <NavLink href="/demo"> Demo Classes</NavLink>
+    <NavLink href="/contact-us"> Contact Us</NavLink>
+    {/* <NavLink href="/login" tw="lg:ml-12!">
+      Login
+    </NavLink>
+    <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink> */}
+  </NavLinks>
   ];
 
   return (
@@ -89,7 +122,7 @@ export default () => {
             <Heading>
               <span>Hire the best</span>
               <br />
-              <SlantedBackground>Marketing Team.</SlantedBackground>
+              <SlantedBackground>Marketing</SlantedBackground>
             </Heading>
             <PrimaryAction>Read Customer Stories</PrimaryAction>
           </LeftColumn>

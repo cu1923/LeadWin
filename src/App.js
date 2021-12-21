@@ -94,7 +94,12 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 /* Inner Pages */
 import LoginPage from "pages/Login.js";
 import SignupPage from "pages/Signup.js";
-import ProgramsPage from "pages/Programs.js";
+import AcademicPage from "pages/Academic.js";
+import SummerPage from "pages/Summer-Camp.js";
+import CollegePage from "pages/College-Prep";
+import PretestPage from "pages/Pre-test";
+import PrivatePage from "pages/Private-Tutoring";
+import EnrichmentPage from "pages/Enrichment";
 import TeachersPage from "pages/Teachers.js";
 import AboutUsPage from "pages/AboutUs.js";
 import DemoPage from "pages/Demo.js";
@@ -125,8 +130,23 @@ export default function App() {
         <Route path="/about">
           <AboutUsPage />
         </Route>
-        <Route path="/programs">
-          <ProgramsPage />
+        <Route path="/academic">
+          <AcademicPage />
+        </Route>
+        <Route path="/enrichment">
+          <EnrichmentPage />
+        </Route>
+        <Route path="/pretest">
+          <PretestPage />
+        </Route>
+        <Route path="/summercamp">
+          <SummerPage />
+        </Route>
+        <Route path="/privatetutor">
+          <PrivatePage />
+        </Route>
+        <Route path="/collegeprep">
+          <CollegePage />
         </Route>
         <Route path="/teachers">
           <TeachersPage />
