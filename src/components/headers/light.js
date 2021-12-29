@@ -6,7 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/logo.svg";
+import logo from "../../images/logo.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
@@ -39,7 +39,7 @@ const DropdownLink = tw.a`
 
 const Header = tw.header`
   flex justify-between items-center
-  max-w-screen-xl mx-auto pb-24
+  max-w-screen-xl mx-auto pb-16
 `;
 
 export const NavLinks = tw.div`inline-block`;
@@ -61,10 +61,10 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
+  ${tw`flex items-center font-black border-b-0 text-3xl! ml-0! pt-8`};
 
   img {
-    ${tw`w-10 mr-3`}
+    ${tw`w-24 mr-4`}
   }
 `;
 
@@ -99,6 +99,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
+    <NavLink href="/">Home</NavLink>
     <NavLink href="/about">About</NavLink>
     <NavLink>
       <NavbarDropdown>
@@ -108,8 +109,8 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
           <DropdownLink href="/enrichment">Enrichment Program</DropdownLink> <br></br>
           <DropdownLink href="/summercamp">Summer Camp</DropdownLink> &ensp; &ensp; &ensp;
           <DropdownLink href="/privatetutor">Private Tutoring</DropdownLink> <br></br>
-          <DropdownLink href="/pretest">Pre-test</DropdownLink> &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;
-          <DropdownLink href="/collegeprep">College Prep</DropdownLink> <br></br>
+          <DropdownLink href="/pretest">Test Prep</DropdownLink> &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;
+          <DropdownLink href="/collegeprep">College Planning</DropdownLink> <br></br>
         </NavbarDropdownContent>
       </NavbarDropdown>
     </NavLink>
@@ -128,7 +129,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   const defaultLogoLink = (
     <LogoLink href="/">
-      <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="logo" />
+      <img src={logo} alt="logo" />
       Lead Win
     </LogoLink>
   );

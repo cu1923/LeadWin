@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import styled from "styled-components"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
+import Footer from "components/footers/MiniCenteredFooter.js";
 import MainFeature1 from "components/features/TwoColWithButton.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature3 from "components/features/TwoColSingleFeatureWithStats2.js";
@@ -22,39 +22,36 @@ export default () => {
     <AnimationRevealPage>
       <Header />
       <MainFeature1
-        subheading={<Subheading>About Treact</Subheading>}
-        heading="We are a modern design agency."
-        buttonRounded={false}
-        primaryButtonText="See Portfolio"
+        subheading={<Subheading>About LEAD WIN</Subheading>}
+        heading="The most devoted education platform."
+        description="LEAD WIN is an online education platform located in South California aiming to provide personalized and comprehensive learning system as well as counseling for k-12th students. Our teachers are talented and professional educators selected from different states across the U.S. with thorough backgrounds in education and affluent experience. "
         imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
       />
       <MainFeature1
         subheading={<Subheading>Our Vision</Subheading>}
-        heading="We aim to disrupt the design space."
-        buttonRounded={false}
-        primaryButtonText="Contact Us"
+        heading="Let every child's dream come true."
+        description="Our mission statement: let the interests guide and the funs lead. We aim to fully unravel a child’s potential and let them develop effective self-learning and analyzing abilities. In addition, we endeavor to cultivate children’s interest and help them achieve self-management, after which they will be able to set goals in life and plan their very future for themselves with confidence."
         imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
         textOnLeft={false}
       />
       <Features
-        subheading={<Subheading>Our Values</Subheading>}
-        heading="We follow these."
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        subheading={<Subheading>Our Expertise</Subheading>}
+        heading="Emphasis on individual development."
         cards={[
           {
             imageSrc: SupportIconImage,
-            title: "24/7 Support",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            title: "Personalized Learning",
+            description: "Facilitated learning by evaluating and customizing a suitable learning plan that fulfills the needs of every student."
           },
-          {
+          { 
             imageSrc: ShieldIconImage,
-            title: "Strong Teams",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            title: "Quality Small Classes",
+            description: "A class of less than 6 students preserves a attentive and orderly learning environment in which students are more willing to participate."
           },
           {
             imageSrc: CustomerLoveIconImage,
-            title: "Customer Satisfaction",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            title: "Skilled Educators",
+            description: "Employs a rigorous selection process to ensure that the most qualified and competent teachers are serving every parent and student."
           },
         ]}
         linkText=""

@@ -94,7 +94,7 @@ import GetStartedLightCTA from "components/cta/GetStartedLight.js";
 import DownloadAppCTA from "components/cta/DownloadApp.js";
 
 import SimpleFiveColumnFooter from "components/footers/SimpleFiveColumn.js";
-import FiveColumnWithInputFormFooter from "components/footers/FiveColumnWithInputForm.js";
+import FiveColumnWithInputFormFooter from "components/footers/MiniCenteredFooter.js";
 import FiveColumnWithBackgroundFooter from "components/footers/FiveColumnWithBackground.js";
 import FiveColumnDarkFooter from "components/footers/FiveColumnDark.js";
 import MiniCenteredFooter from "components/footers/MiniCenteredFooter.js";

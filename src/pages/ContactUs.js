@@ -2,8 +2,9 @@ import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import qrcode from "images/QRcode.jpg"
 import Header from "components/headers/light.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
+import Footer from "components/footers/MiniCenteredFooter.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 import ContactDetails from "components/cards/ThreeColContactDetails.js";
 
@@ -16,89 +17,56 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Header />
-      <ContactUsForm />
       <ContactDetails
+        heading = "Contact Information"
+        subheading= "Our operating hours are 9am to 6pm, Monday to Saturday."
         cards={[
           {
-            title: "New York",
+            title: "Registration Email",
             description: (
               <>
                 <Address>
-                  <AddressLine>40 Gates Court</AddressLine>
-                  <AddressLine>Endicott, NY 13760</AddressLine>
+                  <AddressLine>youmecanedu@gmail.com</AddressLine>
                 </Address>
-                <Email>contact@treact.com</Email>
-                <Phone>+1 (203) 991-6988</Phone>
+              </>
+            ),
+            second: "LinkedIn",
+            secondDescription: (
+              <>
+                <Address>
+                  <AddressLine>link</AddressLine>
+                </Address>
               </>
             )
           },
           {
-            title: "Illinois",
+            title: "Feedback Email",
             description: (
               <>
                 <Address>
-                  <AddressLine>602 Annadale Drive</AddressLine>
-                  <AddressLine>Dekalb, IL 60115</AddressLine>
+                  <AddressLine>leadwinedu01@gmail.com</AddressLine>
                 </Address>
-                <Email>contact@treact.com</Email>
-                <Phone>+1 (203) 991-6988</Phone>
+              </>
+            ),
+            second: "Phone Number",
+            secondDescription: (
+              <>
+                <Address>
+                  <AddressLine>(818) 428-1661</AddressLine>
+                </Address>
               </>
             )
           },
           {
-            title: "California",
+            title: "WeChat ID",
+            image: qrcode,
             description: (
               <>
-                <Address>
-                  <AddressLine>96 NE. Delaware Lane</AddressLine>
-                  <AddressLine>Sacramento, CA 95820</AddressLine>
-                </Address>
-                <Email>contact@treact.com</Email>
-                <Phone>+1 (203) 991-6988</Phone>
               </>
             )
-          },
-          {
-            title: "Tennessee",
-            description: (
-              <>
-                <Address>
-                  <AddressLine>74 Peachtree Ave.</AddressLine>
-                  <AddressLine>Dyersburg, TN 38024</AddressLine>
-                </Address>
-                <Email>contact@treact.com</Email>
-                <Phone>+1 (203) 991-6988</Phone>
-              </>
-            )
-          },
-          {
-            title: "New Jersey",
-            description: (
-              <>
-                <Address>
-                  <AddressLine>8355 Summer Street</AddressLine>
-                  <AddressLine>Manchester, NJ 08759</AddressLine>
-                </Address>
-                <Email>contact@treact.com</Email>
-                <Phone>+1 (203) 991-6988</Phone>
-              </>
-            )
-          },
-          {
-            title: "Ohio",
-            description: (
-              <>
-                <Address>
-                  <AddressLine>7713 Snake Hill Ave.</AddressLine>
-                  <AddressLine>Piqua, OH 45356</AddressLine>
-                </Address>
-                <Email>contact@treact.com</Email>
-                <Phone>+1 (203) 991-6988</Phone>
-              </>
-            )
-          }
-        ]}
+          }]}
       />
+      <ContactUsForm />
       <Footer />
     </AnimationRevealPage>
   );

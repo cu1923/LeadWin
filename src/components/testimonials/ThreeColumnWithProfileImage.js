@@ -6,6 +6,7 @@ import { ContentWithPaddingXl, Container } from "components/misc/Layouts.js";
 import { SectionHeading as Heading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
+import { PrimaryButton } from "components/misc/Buttons";
 
 const Subheading = tw(SubheadingBase)`text-center`;
 const Testimonials = tw.div`flex flex-col lg:flex-row items-center lg:items-stretch`;
@@ -22,16 +23,21 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
   ${tw`pointer-events-none -z-20 absolute right-0 bottom-0 h-64 w-64 opacity-15 transform translate-x-2/3 text-yellow-500`}
 `;
 
+const Description = tw.p`mt-4 text-sm md:text-base lg:text-lg mx-24 font-medium leading-relaxed text-secondary-100 `;
+
+
 export default ({
   subheading = "Lead Win Presents",
   heading = "Teachers",
-  testimonials = [ [] ]
+  testimonials = [ [] ],
+  description= ""
 }) => {
   return (
     <Container>
       <ContentWithPaddingXl>
         {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading> 
+        {description && <Description>{description}</Description>}
           {testimonials.map(row => {
               return (
               <Testimonials>
@@ -41,7 +47,8 @@ export default ({
                     <Testimonial>
                       <Image src={teacher.imageSrc} />
                       <Quote>"{teacher.quote}"</Quote>
-                      <CustomerName>- {teacher.customerName}</CustomerName>
+                      <CustomerName>- {teacher.customerName}</CustomerName> <br></br>
+                      <PrimaryButton> view demo</PrimaryButton>
                     </Testimonial>
                   </TestimonialContainer>
                 )

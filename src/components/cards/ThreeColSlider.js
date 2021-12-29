@@ -31,18 +31,18 @@ const CardSlider = styled(Slider)`
     ${tw`flex`}
   }
   .slick-slide {
-    ${tw`h-auto flex justify-center mb-1`}
+    ${tw`h-auto flex justify-center mb-20`}
   }
 `;
-const Card = tw.div`h-full flex! flex-col sm:border max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none`;
+const Card = tw.div`h-full flex! flex-col sm:border sm:rounded-tl-4xl sm:rounded-br-5xl focus:outline-none sm: w-128`;
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`
 ]);
 
-const TextInfo = tw.div`py-6 sm:px-10 sm:py-6`;
+const TextInfo = tw.div`py-6 sm:px-10 sm:py-6 sm:w-96`;
 const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center`;
-const Title = tw.h5`text-2xl font-bold`;
+const Title = tw.h5`text-xl font-bold`;
 
 const RatingsInfo = styled.div`
   ${tw`flex items-center sm:ml-4 mt-2 sm:mt-0`}
@@ -55,11 +55,11 @@ const Rating = tw.span`ml-2 font-bold`;
 const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4`;
 
 const SecondaryInfoContainer = tw.div`flex flex-col sm:flex-row mt-2 sm:mt-4`;
-const IconWithText = tw.div`flex items-center mr-6 my-2 sm:my-0`;
+const IconWithText = tw.div`flex items-center mr-4 my-2 sm:my-0`;
 const IconContainer = styled.div`
   ${tw`inline-block rounded-full p-2 bg-gray-700 text-gray-100`}
   svg {
-    ${tw`w-3 h-3`}
+    ${tw`w-20 h-20`}
   }
 `;
 const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
@@ -93,34 +93,31 @@ export default () => {
     {
       imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Wyatt Residency",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Rome, Italy",
-      pricingText: "USD 39/Day",
-      rating: "4.8",
+      description: "description ",
+      pricingText: "Beginning Spanish",
+      rating: "5.0",
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Soho Paradise",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Ibiza, Spain",
-      pricingText: "USD 50/Day",
-      rating: 4.9,
+      description: "description",
+      pricingText: "Beginning Spanish",
+      rating: "5.0",
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Hotel Baja",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Palo Alto, CA",
-      pricingText: "USD 19/Day",
+      description: "description",
+      pricingText: "h",
       rating: "5.0",
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Hudak Homes",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+      description: "description",
       locationText: "Arizona, RAK",
       pricingText: "USD 99/Day",
-      rating: 4.5,
+      rating: "5.0",
     },
   ]
 
@@ -128,7 +125,7 @@ export default () => {
     <Container>
       <Content>
         <HeadingWithControl>
-          <Heading>Popular Hotels</Heading>
+          <Heading>More demo classes</Heading>
           <Controls>
             <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
             <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
@@ -151,12 +148,8 @@ export default () => {
                     <IconContainer>
                       <LocationIcon />
                     </IconContainer>
-                    <Text>{card.locationText}</Text>
                   </IconWithText>
                   <IconWithText>
-                    <IconContainer>
-                      <PriceIcon />
-                    </IconContainer>
                     <Text>{card.pricingText}</Text>
                   </IconWithText>
                 </SecondaryInfoContainer>

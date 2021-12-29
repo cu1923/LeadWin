@@ -51,7 +51,10 @@ const FeatureIconContainer = styled.div`
     ${tw`w-5 h-5`}
   }
 `;
-const FeatureHeading = tw.div`ml-3 font-bold text-xl`;
+const FeatureHeading = styled.div`
+  ${tw`ml-3 font-bold text-xl`}
+  white-space:pre-wrap;
+`;
 
 const FeatureDescription = tw.div`mt-4 text-center md:text-left text-gray-600 leading-relaxed`;
 
@@ -80,7 +83,9 @@ export default ({
   features = [ [] ],
   iconRoundedFull = true,
   iconFilled = true,
-  iconContainerCss = null
+  button = false,
+  buttonUrl = "",
+  iconContainerCss = null,
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
@@ -140,11 +145,11 @@ export default ({
               )
             })}
             <Features>
-              <Feature button={true}>
-                <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
-                  {primaryButtonText}
+              {button && <Feature button={true}>
+                <PrimaryButton buttonRounded={buttonRounded} as="a" href={buttonUrl}>
+                  {button}
                 </PrimaryButton>
-              </Feature>
+              </Feature>}
               <Feature>
                 <PrimaryButton buttonRounded={buttonRounded} as="a" onClick={() => scroll.scrollToTop()}>
                 Back to the top

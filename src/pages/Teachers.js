@@ -2,8 +2,7 @@ import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Header from "components/headers/light.js";
 import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
-import FAQ from "components/faqs/SingleCol.js";
+import Footer from "components/footers/MiniCenteredFooter.js";
 
 const teachers = [[
     {
@@ -59,6 +58,7 @@ export default () => {
       <Testimonial
         heading="Our Wonderful Teachers"
         testimonials = {teachers}
+        description="Our team of educators originate from across the United States with profound education background, certified capabilities and years of experience. We offer the most professional skills, the most creative learning environment and a variety of class materials for your child to prosper on this long road of knowledge seeking!"
       />
       <Footer/>
     </AnimationRevealPage>

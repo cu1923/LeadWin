@@ -1,5 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
+import {animateScroll as scroll} from "react-scroll";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/BackgroundAsImage.js";
@@ -7,10 +8,10 @@ import Features from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import Reviews from "components/testimonials/SimplePrimaryBackground.js";
 import Programs from "components/features/DashedBorderSixFeatures"
-import Card from "components/cards/TabCardGrid"
+import { PrimaryButton} from "components/misc/Buttons.js";
 import FAQ from "components/faqs/SingleCol.js";
 import GetStarted from "components/cta/GetStarted";
-import Footer from "components/footers/FiveColumnWithBackground.js";
+import Footer from "components/footers/MiniCenteredFooter.js";
 import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
 import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
@@ -50,7 +51,8 @@ export default () => {
           { imageSrc: "images/shield-icon.svg", title: "Customizable", description: "Teacher 5 description" },
           { imageSrc: "images/shield-icon.svg", title: "Customizable", description: "Teacher 6 description" }
         ]}
-        button = "Learn more about our teachers"
+        button = {"Learn more about our teachers"}
+        description= {"Our team of educators originate from across the United States with profound education background, certified capabilities and years of experience. We offer the most professional skills, the most creative learning environment and a variety of class materials for your child to prosper on this long road of knowledge seeking!"}
         buttonUrl = "/teachers"
       />
       <Programs
@@ -63,13 +65,13 @@ export default () => {
         {
           imageSrc: ShieldIconImage,
           title: "Academic Program",
-          description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
+          description: "ELD\\ESL for non-natives and adults. \n \n Small size group classes for K-8th graders including English, Math and Science separated based on students’ grade level. \n\nAll subject private tutoring for K-12th graders including English, Math, Science, History, Biology, Chemistry and Physics, etc. up to AP level."
         },
-        { imageSrc: SupportIconImage, title: "Enrichment Program" },
-        { imageSrc: CustomizeIconImage, title: "Summer Camp" },
-        { imageSrc: ReliableIconImage, title: "Private Tutoring" },
-        { imageSrc: FastIconImage, title: "Pre-test" },
-        { imageSrc: SimpleIconImage, title: "College Prep" }
+        { imageSrc: SupportIconImage, title: "Enrichment Program", description:"Aims to lead students by their interests and to provide rewarding and diverse courses to fill their spare time with fun activities and useful knowledge for future advancements. \n \nEnrichment courses for younger students, including Coding, Speech & Public speaking, Debate, Art and all Languages (Spanish, Chinese, French, Korean). "},
+        { imageSrc: CustomizeIconImage, title: "Summer Camp", description: "Yearly program of Academic and Enrichment courses with a lot of fun activities of full-day length. Join us and embark on a learning journey full of enjoyment!"},
+        { imageSrc: ReliableIconImage, title: "Private Tutoring", description: "1on1 and 1on2 private tutoring for k-12th for all subjects based on the needs of the students. \n\nPersonalized curriculum and flexible tutoring schedule, sign up for a customized booster program today!" },
+        { imageSrc: FastIconImage, title: "Test Prep", description:"Test prep program designed specifically for standardized testing such as SAT/ACT/PSAT/AP. \n\n Student will be evaluated first, then teachers will strategically construct a learning plan to boost scores strategically. Available as private tutoring only. "},
+        { imageSrc: SimpleIconImage, title: "College Prep", description: "College counseling for 7-12th graders with professional assistance at every step in the application process from preparation to decision.\n\n Services include the application process, GPA management, letters of recommendation, essay writing and interview guiding."}
       ]}
       />
       <MainFeature
@@ -84,33 +86,49 @@ export default () => {
         primaryButtonUrl = "/demo"
       />
       <Reviews 
-        subheading = {"subheading"}
+        subheading = {"Feedback From Clients"}
         heading = {"Parents Love Us!"}
-        description = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+        description = {"Parents’ feedback on the quality of classes and the student’s progress is extremely valuable to us! Your advice and opinions are what motivate us to move forward in the beter direction. "}
         testimonials = {[
           {
-            customerName: "David Hanson",
-            customerProfile: "CEO, Koalify",
+            customerName: "name",
+            customerProfile: "Aiden's mother",
             imageSrc:
               "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.85&w=256&h=256&q=80",
             quote:
-              "We have been using servana for about 2 years. And in that time we have had no problem at all. The user interface is really simple to use. Our services scale automatically and we never have to worry about downtimes. is as described."
+              "My son Aiden is enrolled in the third grade English class. The teachers here are fantastic! My child has always hated online classes, but now he is attending every class on time. As a parent, I couldn’t be more grateful. With the systematic learning, my son not only improved his grade in English significantly, but also made so many friends from different regions. A big thank you to LEAD WIN for providing such a wonderful platform for education!"
           },
           {
-            customerName: "Serena Davis",
-            customerProfile: "Founder, Travana",
+            customerName: "name",
+            customerProfile: "Celine's mother",
             imageSrc:
               "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=256&h=256&q=80",
             quote:
-              "We are delighted with the quality and performance of the servers that servana provides. The uptime is amazing and the internet connection is great for the price we are paying."
+              "I am Celine’s parent who’s taking the Spanish Oral class here. It’s been about a year since she has been learning Spanish in school, but she hated speaking the langauge. However, after taking the Spanish class with LEAD WIN, she’s a lot more willing to talk in Spanish now. This is a great leap of progress for Celine, and I am just as happy to have witnessed the change. Thank you Ms.Molly for all the hard work and effort! Your students love you and your classes very much!"
           },
           {
-            customerName: "Timothy Burr",
-            customerProfile: "CTO, Coronax",
+            customerName: "name ",
+            customerProfile: "Cherry's mother",
             imageSrc:
               "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=256&h=256&q=80",
             quote:
-              "It has been 8 months since we have switched to servana and it has nothing but an amazing experience. The cost is affordable, support is great, uptime is as described."
+              "I am Cherry’s mother, my daughter is doing the Math 1 on 1 tutoring. Cherry disliked Math, and her Math grade in school was very unstable, so I signed her up for a couple of classes just to try it out. She loved it, the teacher seemed professional, too, this cleared my doubt about online school. Now my child has been learning with LEAD WIN for a semester already, her grade in Math was increased a great deal too. I would like to sincerely thank Cherry’s Math teacher Yujun, and LEAD WIN for being a responsible site for online education. "
+          },
+          {
+            customerName: "name ",
+            customerProfile: "Cherry's mother",
+            imageSrc:
+              "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=256&h=256&q=80",
+            quote:
+              "I am the mother of blank who has been learning coding for over a year now with LEAD WIN. From learning Scratch to advancing into Python, I can tell that my son really likes the teacher and the class atmosphere here. What an accomplishment for him to finish so many different projects along with the other kids here! Aside from coding, my little one also signed up for Math and English. I am more than satisfied with what LEAD WIN has to offer, many thanks!"
+          },
+          {
+            customerName: "name ",
+            customerProfile: "Cherry's mother",
+            imageSrc:
+              "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=256&h=256&q=80",
+            quote:
+              "I am Cherry’s mother, my daughter is doing the Math 1 on 1 tutoring. Cherry disliked Math, and her Math grade in school was very unstable, so I signed her up for a couple of classes just to try it out. She loved it, the teacher seemed professional, too, this cleared my doubt about online school. Now my child has been learning with LEAD WIN for a semester already, her grade in Math was increased a great deal too. I would like to sincerely thank Cherry’s Math teacher Yujun, and LEAD WIN for being a responsible site for online education. "
           }
         ]}
       />
@@ -121,39 +139,46 @@ export default () => {
             You have <HighlightedText>Questions ?</HighlightedText>
           </>
         }
+        description="Here are some frequently asked questions from parents for your reference!"
         faqs={[
           {
-            question: "Are all the templates easily customizable ?",
+            question: "Where are LEAD WIN’s teachers from? ",
             answer:
-              "Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Our educating team consists of professional teachers from regions across the US."
           },
           {
-            question: "How long do you usually support an standalone template for ?",
+            question: "Are the teachers qualified to teach?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "All of our teachers are carefully selected by LEAD WIN with many years of teaching experience and distinguished education background. It is required that they possess relevant government-issued certificates as well."
           },
           {
-            question: "What kind of payment methods do you accept ?",
+            question: "How many students are there usually in a group class at LEAD WIN?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "We set limits on our class size to ensure quality teaching via online classes. The maximum number of students is 6 per class. "
           },
           {
-            question: "Is there a subscribption service to get the latest templates ?",
+            question: "Is it possible to try a class out? ",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Clients are welcomed to read about our teachers’ background as well as their teaching style under the “teachers” tab and watch a few demo videos before signing up for the trial class for the teachers. Trial classes will be charged individually."
           },
           {
-            question: "Are the templates compatible with the React ?",
+            question: "How long is each class?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "1 hour."
           },
           {
-            question: "Do you really support Internet Explorer 11 ?",
+            question: "How often is payment due and in what form?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Two types of payment: by semester or half a semester. We accept check, Zelle or Venmo."
           }
         ]}
       />
+      <div style={{textAlign: `right`}}>
+        <PrimaryButton buttonRounded={true} as="a" onClick={() => scroll.scrollToTop()}>
+            Back to the top
+        </PrimaryButton>
+      </div>
+      <br></br> <br></br> <br></br>
       <Footer />
     </AnimationRevealPage>
   );

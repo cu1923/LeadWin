@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import logolink from "../../images/logo-white.jpg";
 
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
@@ -13,7 +14,7 @@ const NavbarDropdownContent = styled.div`
     display: none;
     position: absolute;
     min-width: 200px;
-    background: linear-gradient(0deg, rgba(100, 21, 255, 0.8) 97%, rgba(0, 0, 0, 0) 3%);
+    background: linear-gradient(0deg, rgba(62, 78, 160, 0.8) 97%, rgba(0, 0, 0, 0) 3%);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
     padding: 12px 6px;
     padding-left: 15px;
@@ -36,7 +37,7 @@ const DropdownLink = tw.a`
 `;
 
 const StyledHeader = styled(Header)`
-  ${tw`pt-10 max-w-none`}
+  ${tw`pb-10 pt-8 max-w-none`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
@@ -51,13 +52,13 @@ const Container = styled.div`
 `;
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
 
-const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
-const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
+const HeroContainer = tw.div`z-20 relative px-4 sm:px-4 max-w-screen-xl mx-16`;
+const TwoColumn = tw.div`pt-8 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
 const LeftColumn = tw.div`flex flex-col items-center lg:block`;
 const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-none`}
+  ${tw`text-xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-5xl font-black text-gray-100 leading-none`}
   span {
     ${tw`inline-block mt-2`}
   }
@@ -77,6 +78,7 @@ const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm
 
 const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   padding-bottom: 56.25% !important;
+  margin-left: 90px;
   padding-top: 0px !important;
   ${tw`rounded`}
   iframe {
@@ -87,6 +89,7 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
+    <NavLink href="/">Home</NavLink>
     <NavLink href="/about">About</NavLink>
     <NavLink>
       <NavbarDropdown>
@@ -96,8 +99,8 @@ export default () => {
           <DropdownLink href="/enrichment">Enrichment Program</DropdownLink> <br></br>
           <DropdownLink href="/summercamp">Summer Camp</DropdownLink> <br></br>
           <DropdownLink href="/privatetutor">Private Tutoring</DropdownLink> <br></br>
-          <DropdownLink href="/pretest">Pre-test</DropdownLink> <br></br>
-          <DropdownLink href="/collegeprep">College Prep</DropdownLink> <br></br>
+          <DropdownLink href="/pretest">Test Prep</DropdownLink> <br></br>
+          <DropdownLink href="/collegeprep">College Planning</DropdownLink> <br></br>
         </NavbarDropdownContent>
       </NavbarDropdown>
     </NavLink>
@@ -115,14 +118,21 @@ export default () => {
     <Container>
       <OpacityOverlay />
       <HeroContainer>
-        <StyledHeader links={navLinks} />
+        <StyledHeader 
+        logoLink = {(
+        <LogoLink href="/">
+          <img src={logolink} alt="logo" />
+          Lead Win
+        </LogoLink>
+        )}
+        links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            <Notification>We have now launched operations in Europe.</Notification>
+            <Notification>We believe that every child is unique!</Notification>
             <Heading>
-              <span>Hire the best</span>
-              <br />
-              <SlantedBackground>Marketing</SlantedBackground>
+              <SlantedBackground> LEADING EDUCATION </SlantedBackground> <br></br>
+              <span> for the kids to</span> &ensp;
+              <SlantedBackground> WIN!</SlantedBackground>
             </Heading>
             <PrimaryAction>Read Customer Stories</PrimaryAction>
           </LeftColumn>

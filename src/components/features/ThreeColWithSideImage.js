@@ -30,7 +30,7 @@ const ThreeColumnContainer = styled.div`
 `;
 const Subheading = tw(SubheadingBase)`mb-4`;
 const Heading = tw(SectionHeading)`w-full`;
-const Description = tw(SectionDescription)`w-full text-center`;
+const Description = tw.p`mt-4 text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 `;
 
 const VerticalSpacer = tw.div`mt-10 w-full`
 
@@ -113,7 +113,7 @@ export default ({ cards = null, heading = "heading", subheading = "Features", bu
             </Column>
           ))} </> : <>{}</>
        }
-       <PrimaryButton buttonRounded={true}  as="a" href="/teachers"> {button} </PrimaryButton>
+       <PrimaryButton buttonRounded={true} as="a" href={buttonUrl}> {button} </PrimaryButton>
       </ThreeColumnContainer>
       <DecoratorBlob />
     </Container>
