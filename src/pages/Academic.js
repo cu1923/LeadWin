@@ -14,6 +14,7 @@ import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sig
 const subjects = ["English", "Math", "Private Tutoring"]
 const Header1 = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center`;
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row px-12`;
+const Intro = tw.p`mt-4 text-sm md:text-base lg:text-lg mx-12 my-8 font-medium leading-relaxed text-secondary-100 `;
 
 const english = [[
     {
@@ -49,7 +50,7 @@ const english = [[
     {
         Icon: MoneyIcon,
         title: "International Students",
-        description: "Personalizeid English tutoring tailored for foreign students studying in the US. Offered along with supplemental lessons subjected to American public school standards.",
+        description: "Personalizeid English tutoring tailored for foreign students outside of the US. Offered along with supplemental lessons subjected to American public school standards.",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     }]
 ]
@@ -64,7 +65,7 @@ const math = [
         },
         {
             Icon: SvgDotPattern,
-            title: "Singapore Math k-6th",
+            title: "Singapore Math (k-6th)",
             description: "Employs the Singapore Math Intensive Practice to train students with challenging Math problems, suitable for those who are beyond the school’s level. ",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         }
@@ -164,7 +165,9 @@ export default () => {
                 </Link>
                 ))}
             </TabsControl>
-        </HeaderRow>
+        </HeaderRow>  
+        <Intro>Professional and comprehensive academic courses for k-12th students to fulfill individual needs and facilitate learning. </Intro>
+        
         <Element name="English">
             <Programs
                 subheading = {''}
@@ -203,8 +206,9 @@ export default () => {
                 </>
             )}
             imageSrc=""
+            button = "learn more"
             buttonUrl = "/privatetutor"
-            description="All subject private tutoring for k-12th. 1on1 & 1on2 setting based on the needs of the students. Personalized and customized courses. Class schedules are flexible, can start at any time."
+            description="All subject private tutoring for k-12th. 1on1 and 1on2 setting based on the needs of the students. Personalized and customized courses. Class schedules are flexible, can start at any time."
             />
         </Element>
         <br></br><br></br><br></br>

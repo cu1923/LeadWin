@@ -13,10 +13,12 @@ import FAQ from "components/faqs/SingleCol.js";
 import GetStarted from "components/cta/GetStarted";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
-import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
-import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
-import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
-import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+import icon1 from "images/icon1.png"
+import icon2 from "images/icon2.png"
+import icon3 from "images/icon3.png"
+import icon4 from "images/icon4.png"
+import icon5 from "images/icon5.png"
+import icon6 from "images/icon6.png"
 
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
@@ -33,7 +35,7 @@ export default () => {
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true}/>
       <Features
-        subheading={<Subheading> Teachers </Subheading>}
+        subheading={<Subheading> Our Wonderful Teachers </Subheading>}
         heading={
           <>
             Top Tier<HighlightedText> Educators </HighlightedText>
@@ -45,48 +47,49 @@ export default () => {
             title: "Teacher 1",
             description: "Teacher info "
           },
-          { imageSrc: "images/shield-icon.svg", title: "Teacher 2", description: "Teacher 2 description" },
-          { imageSrc: "images/shield-icon.svg", title: "Customizable", description: "Teacher 3 description" },
+          { imageSrc: "images/icon1.png", title: "Teacher 2", description: "Teacher 2 description" },
+          { imageSrc: "images/icon2.png", title: "Customizable", description: "Teacher 3 description" },
           { imageSrc: "images/shield-icon.svg", title: "Customizable", description: "Teacher 4 description" },
           { imageSrc: "images/shield-icon.svg", title: "Customizable", description: "Teacher 5 description" },
           { imageSrc: "images/shield-icon.svg", title: "Customizable", description: "Teacher 6 description" }
         ]}
         button = {"Learn more about our teachers"}
-        description= {"Our team of educators originate from across the United States with profound education background, certified capabilities and years of experience. We offer the most professional skills, the most creative learning environment and a variety of class materials for your child to prosper on this long road of knowledge seeking!"}
+        description= {"Our team of educators originate from across the United States with profound education background, certified capabilities and years of experience. Our professional teachers will provide the highest quality classes, the most creative learning environment and a variety of class materials for your child to prosper on this long road of knowledge seeking!"}
         buttonUrl = "/teachers"
       />
       <Programs
        heading={
         <>
-          Our Profressional <span tw="text-primary-400"> Programs </span>
+          Our Professional <span tw="text-primary-400"> Programs </span>
         </>
        }
        cards = {[
         {
-          imageSrc: ShieldIconImage,
+          imageSrc: icon1,
           title: "Academic Program",
-          description: "ELD\\ESL for non-natives and adults. \n \n Small size group classes for K-8th graders including English, Math and Science separated based on students’ grade level. \n\nAll subject private tutoring for K-12th graders including English, Math, Science, History, Biology, Chemistry and Physics, etc. up to AP level."
+          description: "ELD/ESL for non-natives and adults. \n \n Small size group classes for K-8th graders including English, Math and Science separated based on students’ grade level. \n\nAll subject private tutoring for K-12th graders including English, Math, Science, History, Biology, Chemistry and Physics, etc. up to AP level."
         },
-        { imageSrc: SupportIconImage, title: "Enrichment Program", description:"Aims to lead students by their interests and to provide rewarding and diverse courses to fill their spare time with fun activities and useful knowledge for future advancements. \n \nEnrichment courses for younger students, including Coding, Speech & Public speaking, Debate, Art and all Languages (Spanish, Chinese, French, Korean). "},
-        { imageSrc: CustomizeIconImage, title: "Summer Camp", description: "Yearly program of Academic and Enrichment courses with a lot of fun activities of full-day length. Join us and embark on a learning journey full of enjoyment!"},
-        { imageSrc: ReliableIconImage, title: "Private Tutoring", description: "1on1 and 1on2 private tutoring for k-12th for all subjects based on the needs of the students. \n\nPersonalized curriculum and flexible tutoring schedule, sign up for a customized booster program today!" },
-        { imageSrc: FastIconImage, title: "Test Prep", description:"Test prep program designed specifically for standardized testing such as SAT/ACT/PSAT/AP. \n\n Student will be evaluated first, then teachers will strategically construct a learning plan to boost scores strategically. Available as private tutoring only. "},
-        { imageSrc: SimpleIconImage, title: "College Prep", description: "College counseling for 7-12th graders with professional assistance at every step in the application process from preparation to decision.\n\n Services include the application process, GPA management, letters of recommendation, essay writing and interview guiding."}
+        { imageSrc: icon2, title: "Enrichment Program", description:"Aims to lead students by their interests and to provide rewarding and diverse courses to fill their spare time with fun activities and useful knowledge for future advancements. \n \nEnrichment courses for younger students, including Coding, Speech & Public speaking, Debate, Art and all Languages (Spanish, Chinese, French, Korean, etc.). "},
+        { imageSrc: icon3, title: "Summer Camp", description: "Yearly Program of Academic and Enrichment courses with a lot of fun activities of full-day length. Join us and embark on a learning journey full of enjoyment!"},
+        { imageSrc: icon4, title: "Private Tutoring", description: "1on1 and 1on2 private tutoring for k-12th for all subjects based on the needs of the students. \n\nPersonalized curriculum and flexible tutoring schedule, sign up for a customized booster program today!" },
+        { imageSrc: icon5, title: "Test Prep", description:"Test Prep program designed specifically for standardized testing such as SAT/ACT/PSAT/AP. \n\n Student will be evaluated first, then teachers will strategically construct a learning plan to boost scores. Available as private tutoring only. "},
+        { imageSrc: icon6, title: "College Prep", description: "College counseling for 7-12th graders with professional assistance at every step in the application process from preparation to decision.\n\n Services include the application process, GPA management, letters of recommendation, essay writing and interview guiding."}
       ]}
       />
       <MainFeature
         bigheading = {
-          <> Here Are Our Demo Classes </>
+          <> Check Out A Demo Class!</>
         }
-        subheading={<Subheading> Class 1 </Subheading>}
+        subheading={<Subheading> Demo Class </Subheading>}
         imageSrc={heroScreenshotImageSrc}
         imageBorder={true}
+        description="This is one of our most popular teachers, Ms. Molly’s Spanish Oral class for k-3rd students who already have some experience with the language."
         imageDecoratorBlob={true}
         primaryButtonText = "See more demo classes"
         primaryButtonUrl = "/demo"
       />
       <Reviews 
-        subheading = {"Feedback From Clients"}
+        subheading = {"Feedback From Parents"}
         heading = {"Parents Love Us!"}
         description = {"Parents’ feedback on the quality of classes and the student’s progress is extremely valuable to us! Your advice and opinions are what motivate us to move forward in the beter direction. "}
         testimonials = {[
@@ -142,17 +145,17 @@ export default () => {
         description="Here are some frequently asked questions from parents for your reference!"
         faqs={[
           {
-            question: "Where are LEAD WIN’s teachers from? ",
+            question: "Where are the teacher of your tutoring center from?",
             answer:
               "Our educating team consists of professional teachers from regions across the US."
           },
           {
             question: "Are the teachers qualified to teach?",
             answer:
-              "All of our teachers are carefully selected by LEAD WIN with many years of teaching experience and distinguished education background. It is required that they possess relevant government-issued certificates as well."
+              "All of our teachers are carefully selected with many years of teaching experiences and distinguished education background. It’s required that they possess relevant qualifications such as teaching certificates, licenses, credentials, TEFL, TESOL"
           },
           {
-            question: "How many students are there usually in a group class at LEAD WIN?",
+            question: "How many students are there usually in a group class setting?",
             answer:
               "We set limits on our class size to ensure quality teaching via online classes. The maximum number of students is 6 per class. "
           },

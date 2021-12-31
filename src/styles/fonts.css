@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "reality-hyper";
+    src: local("reality-hyper"),
+     url("../Fonts/reality-hyper-regular.ttf") format("truetype");
+    font-weight: bold;
+}

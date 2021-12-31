@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {Container as ContainerBase } from "components/misc/Layouts.js"
 import logo from "../../images/logo.svg";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
+import linkedinIcon from "../../images/linkedin-icon.png";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
 
 
@@ -26,6 +26,11 @@ const SocialLink = styled.a`
   svg {
     ${tw`w-5 h-5`}
   }
+
+  img {
+    ${tw`w-4 h-4`}
+    margin-bottom: 3px;
+  }
 `;
 
 const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`
@@ -36,28 +41,28 @@ export default () => {
         <Row>
           <LogoContainer>
             <LogoImg src={logo} />
-            <LogoText>Treact</LogoText>
+            <LogoText>LEAD WIN</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
+            <Link href="/home">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact-us">Contact Us</Link>
+            <Link href="# ">Blog</Link>
             <Link href="#">Reviews</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
+            <SocialLink href="https://linkedin.com">
+              <img src={linkedinIcon} alt="linkedin"/>
             </SocialLink>
             <SocialLink href="https://youtube.com">
               <YoutubeIcon />
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2020, Treact Inc. All Rights Reserved.
+            &copy; Copyright 2021, Lead Win Inc. All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>

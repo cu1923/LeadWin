@@ -23,20 +23,20 @@ export default () => {
       <Header />
       <MainFeature1
         subheading={<Subheading>About LEAD WIN</Subheading>}
-        heading="The most devoted education platform."
+        heading="The most devoted education platform"
         description="LEAD WIN is an online education platform located in South California aiming to provide personalized and comprehensive learning system as well as counseling for k-12th students. Our teachers are talented and professional educators selected from different states across the U.S. with thorough backgrounds in education and affluent experience. "
         imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
       />
       <MainFeature1
         subheading={<Subheading>Our Vision</Subheading>}
-        heading="Let every child's dream come true."
+        heading="Let every child's dream come true"
         description="Our mission statement: let the interests guide and the funs lead. We aim to fully unravel a child’s potential and let them develop effective self-learning and analyzing abilities. In addition, we endeavor to cultivate children’s interest and help them achieve self-management, after which they will be able to set goals in life and plan their very future for themselves with confidence."
         imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
         textOnLeft={false}
       />
       <Features
         subheading={<Subheading>Our Expertise</Subheading>}
-        heading="Emphasis on individual development."
+        heading="Emphasis on individual development"
         cards={[
           {
             imageSrc: SupportIconImage,
@@ -58,6 +58,7 @@ export default () => {
       />
       <TeamCardGrid 
         subheading={<Subheading>Our Team</Subheading>}
+        description=""
       />
       <Footer />
     </AnimationRevealPage>

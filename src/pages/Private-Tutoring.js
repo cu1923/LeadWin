@@ -11,7 +11,7 @@ import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
-const subjects = ["English & Math", "History & Social Studiesx", "Biology, Chemistry & Physics", "Languages"]
+const subjects = ["English & Math", "History & Social Studies", "Biology, Chemistry & Physics", "Languages"]
 
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row px-12`;

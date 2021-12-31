@@ -13,7 +13,7 @@ import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sig
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
-const ImageColumn = tw(Column)`md:w-6/12 flex-shrink-0 relative`;
+const ImageColumn = tw(Column)`md:w-4/12 flex-shrink-0 relative`;
 const TextColumn = styled(Column)(props => [
   tw`md:w-6/12 mt-16 md:mt-0`,
   props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
@@ -53,7 +53,7 @@ const FeatureIconContainer = styled.div`
 `;
 const FeatureHeading = styled.div`
   ${tw`ml-3 font-bold text-xl`}
-  white-space:pre-wrap;
+  white-space: pre-wrap;
 `;
 
 const FeatureDescription = tw.div`mt-4 text-center md:text-left text-gray-600 leading-relaxed`;

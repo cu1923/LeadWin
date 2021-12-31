@@ -22,7 +22,7 @@ export default () => {
         subheading= "Our operating hours are 9am to 6pm, Monday to Saturday."
         cards={[
           {
-            title: "Registration Email",
+            title: "Registration",
             description: (
               <>
                 <Address>
@@ -40,7 +40,7 @@ export default () => {
             )
           },
           {
-            title: "Feedback Email",
+            title: "Feedback",
             description: (
               <>
                 <Address>

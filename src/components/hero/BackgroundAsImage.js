@@ -2,8 +2,9 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import { css } from "styled-components/macro"; //eslint-disable-line
+import {animateScroll as scroll} from "react-scroll";
+import '../../Fonts/reality-hyper-regular.ttf';
+import '../../styles/fonts.css';
 import logolink from "../../images/logo-white.jpg";
 
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
@@ -72,7 +73,7 @@ const SlantedBackground = styled.span`
   }
 `;
 
-const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
+const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-xl xl: font-bold font-serif italic`;
 
 const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-400 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
 
@@ -120,9 +121,9 @@ export default () => {
       <HeroContainer>
         <StyledHeader 
         logoLink = {(
-        <LogoLink href="/">
+        <LogoLink home = {true} href="/">
           <img src={logolink} alt="logo" />
-          Lead Win
+          <span className="font-face">Lead Win </span>
         </LogoLink>
         )}
         links={navLinks} />
@@ -134,7 +135,7 @@ export default () => {
               <span> for the kids to</span> &ensp;
               <SlantedBackground> WIN!</SlantedBackground>
             </Heading>
-            <PrimaryAction>Read Customer Stories</PrimaryAction>
+            <PrimaryAction onClick={() => scroll.scrollMore(700)}>Click to learn more</PrimaryAction>
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed

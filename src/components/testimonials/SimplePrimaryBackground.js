@@ -11,10 +11,16 @@ import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg"
 
 import "slick-carousel/slick/slick.css";
 
-const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 bg-primary-900 text-gray-100`;
+const PrimaryBackgroundContainer = styled.div`
+  ${tw(Container)`-mx-8 px-8`}
+  background-color: #4158D0;
+  color: #122273;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+`;
 
 const HeadingContainer = tw.div``;
-const Subheading = tw(SubheadingBase)`text-center text-gray-100 mb-4`;
+const Subheading = tw(SubheadingBase)`text-center text-gray-100 mt-4`;
 const Heading = tw(SectionHeading)``;
 const Description = tw(SectionDescription)`mx-auto text-center text-gray-300`;
 

@@ -5,7 +5,8 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import Header from "components/headers/light.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
-import Programs from "components/features/TwoColWithTwoHorizontalFeaturesAndButton"
+import flyer1 from "images/flyer1.jpg"
+import flyer2 from "images/flyer2.jpg"
 
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
@@ -25,6 +26,20 @@ const TabControl = styled.div`
   ${props => props.active && tw`bg-primary-500! text-gray-100!`}
   }
 `;
+
+const Image = styled.img`
+  ${tw`px-8 `}
+`;
+
+const Flyer = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto items-center`;
+const Column = tw.div`w-full max-w-md md:max-w-none md:mx-0`;
+const ImageColumn = styled.div`
+  ${tw(Column)`md:w-6/12 mx-auto relative`}
+  img {
+    padding:20px;
+  }
+`;
+
 const Intro = tw.p`mt-4 text-sm md:text-base lg:text-lg mx-12 my-8 font-medium leading-relaxed text-secondary-100 `;
 
 export default () => {
@@ -57,18 +72,14 @@ export default () => {
         </HeaderRow>
         <Intro>A full-day program lasting 10 weeks every summer. Content ranges from academic subjects to non-academic, interest-oriented classes. Actual subjects include English, Math, Programming, Spanish, Chinese, Public Speaking, Debate, etc. In the mean time, personalized private tutoring is open in all subjects for students with need as well. </Intro>
 
-        {/* <Element name="">
-            <Programs
-                subheading = {''}
-                heading = {(
-                    <>
-                    <span tw="text-primary-400"> </span>
-                    </>
-                )}
-                features = {[[]]}
-                imageSrc=""                         
-            />
-        </Element> */}
+        <Flyer>
+            <ImageColumn>
+              <Image src={flyer1} alt="flyer1" />
+            </ImageColumn>
+            <ImageColumn>
+              <Image src={flyer2} alt="flyer2" />
+            </ImageColumn>
+        </Flyer>
          <br></br><br></br><br></br>
         <Footer/>
       </AnimationRevealPage>
