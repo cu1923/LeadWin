@@ -11,7 +11,7 @@ import { PrimaryButton } from "components/misc/Buttons";
 const Subheading = tw(SubheadingBase)`text-center`;
 const Testimonials = tw.div`flex flex-col lg:flex-row items-center lg:items-stretch`;
 const TestimonialContainer = tw.div`mt-16 lg:w-1/3`;
-const Testimonial = tw.div`px-4 text-center max-w-xs mx-auto flex flex-col items-center`;
+const Testimonial = tw.div`text-center max-w-xs mx-auto flex flex-col items-center`;
 const Image = tw.img`w-40 h-40 rounded-full`;
 const Quote = tw.blockquote`mt-5 text-gray-600 font-medium leading-loose`;
 const CustomerName = tw.p`mt-5 text-gray-900 font-semibold uppercase text-sm tracking-wide`;
@@ -48,11 +48,11 @@ export default ({
                       <Image src={teacher.imageSrc} />
                       <Quote>"{teacher.quote}"</Quote>
                       <CustomerName>- {teacher.customerName}</CustomerName> <br></br>
-                      <PrimaryButton> view demo</PrimaryButton>
+                      <PrimaryButton as="a" href="/demo"> view demo</PrimaryButton>
                     </Testimonial>
                   </TestimonialContainer>
                 )
-              })})
+              })}
               </Testimonials>)
             })}
       </ContentWithPaddingXl>
