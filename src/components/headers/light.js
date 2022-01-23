@@ -62,7 +62,7 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center border-b-0 text-3xl! ml-0! pt-8`}
+  ${tw`flex items-center border-b-0 text-2xl! ml-0! pt-8`}
   img {
     ${tw`w-24`}
     margin-right:${props => props.home ? "16px" : "0px" };

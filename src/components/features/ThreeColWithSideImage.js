@@ -33,17 +33,18 @@ const Heading = tw(SectionHeading)`w-full`;
 const Description = tw.p`mt-4 text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 `;
 
 const VerticalSpacer = tw.div`mt-10 w-full`
+const Image = tw.img`w-40 h-40 rounded-full`;
 
 const Column = styled.div`
-  ${tw`md:w-1/2 lg:w-1/3 max-w-sm`}
+  ${tw`md:w-1/2 lg:w-1/2 mx-12 max-w-sm`}
 `;
 
 const Card = styled.div`
   ${tw`flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
   .imageContainer {
-    ${tw`border text-center rounded-full p-5 flex-shrink-0`}
+    ${tw`border text-center rounded-full flex-shrink-0`}
     img {
-      ${tw`w-6 h-6`}
+      ${tw`w-24 h-24`}
     }
   }
 
@@ -56,7 +57,7 @@ const Card = styled.div`
   }
 
   .description {
-    ${tw`mt-1 sm:mt-4 font-medium text-secondary-100 leading-loose`}
+    ${tw`mt-1 sm:mt-4 font-medium text-lg text-secondary-100 leading-loose`}
   }
 `;
 
@@ -101,7 +102,7 @@ export default ({ cards = null, heading = "heading", subheading = "Features", bu
             <Column key={i}>
               <Card>
                 <span className="imageContainer">
-                  <img src={card.imageSrc || defaultCardImage} alt="" />
+                  <Image src={card.imageSrc || defaultCardImage} alt="" />
                 </span>
                 <span className="textContainer">
                   <span className="title">{card.title || "Fully Secure"}</span>

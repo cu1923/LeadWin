@@ -28,17 +28,11 @@ const TabControl = styled.div`
 `;
 
 const Image = styled.img`
-  ${tw`px-8 `}
+  ${tw`px-12`}
+  height:460px;
 `;
 
-const Flyer = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto items-center`;
-const Column = tw.div`w-full max-w-md md:max-w-none md:mx-0`;
-const ImageColumn = styled.div`
-  ${tw(Column)`md:w-6/12 mx-auto relative`}
-  img {
-    padding:20px;
-  }
-`;
+const Flyer = tw.div`flex flex-col md:flex-row max-w-screen-xl mx-auto items-center`;
 
 const Intro = tw.p`mt-4 text-sm md:text-base lg:text-lg mx-12 my-8 font-medium leading-relaxed text-secondary-100 `;
 
@@ -73,12 +67,8 @@ export default () => {
         <Intro>A full-day program lasting 10 weeks every summer. Content ranges from academic subjects to non-academic, interest-oriented classes. Actual subjects include English, Math, Programming, Spanish, Chinese, Public Speaking, Debate, etc. In the mean time, personalized private tutoring is open in all subjects for students with need as well. </Intro>
 
         <Flyer>
-            <ImageColumn>
               <Image src={flyer1} alt="flyer1" />
-            </ImageColumn>
-            <ImageColumn>
               <Image src={flyer2} alt="flyer2" />
-            </ImageColumn>
         </Flyer>
          <br></br><br></br><br></br>
         <Footer/>

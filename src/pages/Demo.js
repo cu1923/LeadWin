@@ -23,6 +23,7 @@ export default () => {
         subheading={<Subheading>Molly</Subheading>}
         heading="Oral Spanish"
         buttonRounded={false}
+        description="This is one of our most popular teachers, Ms. Molly’s Spanish Oral class for k-3rd students who already have some experience with the Spanish language."
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/LzaSVRNI4GQ"
       />

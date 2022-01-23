@@ -12,6 +12,13 @@ import { ReactComponent as Blobthree } from "images/blob3.svg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+import spanishflyer from "images/spanishflyer.jpg"
+import icon2 from "images/icon2.png"
+import icon3 from "images/icon3.png"
+import icon4 from "images/icon4.png"
+import icon5 from "images/icon5.png"
+import codingflyer from "images/codingflyer.jpg"
+
 
 const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
@@ -46,29 +53,29 @@ const Intro = tw.p`mt-4 text-sm md:text-base lg:text-lg mx-12 my-8 font-medium l
 const languages = [
     [ 
         {
-            Icon: BriefcaseIcon,
+            Icon: icon2,
             title: "Spanish",
-            description: "Update to date instructions on the student’s homework with abundant practice on the side in accordance with the Common Core State Standards to effectively boost his or her grade in Math.",
+            description: "Systematic course design with 6 levels ranging from beginner to advanced level conversational Spanish.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
-            Icon: SvgDotPattern,
+            Icon: icon4,
             title: "Chinese",
-            description: "Employs the Singapore Math Intensive Practice to train students with challenging Math problems, suitable for those who are beyond the school’s level. ",
+            description: "Methodical course structure with 6 difficulty levels using Chinese language textbooks《中文》, 《美洲华语》.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         }
     ],
     [
         {
-            Icon: BriefcaseIcon,
+            Icon: icon5,
             title: "French",
-            description: "Curriculum based on Singaporean Math Olympiad and sample competition problems. Designed for students interested in Math Olympiad competitions such as the American Mathematics Competition. ",
+            description: "Ordered course system with beginner, intermediate and advanced levels covering introductory French to fluent conversations.  ",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
-            Icon: SvgDotPattern,
+            Icon: icon3,
             title: "Korean",
-            description: "Tailored for students going into the honors program. Course content varies depending on the school district. \n The Advanced Placement Test Program provides tutoring specific for AP tests.",
+            description: "Standardized exploration of the Korean language at 3 different proficiency levels with an emphasis on listening, speaking and reading.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         }
     ]
@@ -115,7 +122,7 @@ export default () => {
                 )}
                 features = {[[]]}
                 description="Our goals are to build the next generation of technology innovators and encourage them to replenish the fields of programming and entrepreneurship. Our Online Coding Program offers a wide variety of coding curriculums for K-8th graders, including Scratch, Python, Java, JavaScript etc at different levels. "
-                imageSrc=""
+                imageSrc={codingflyer}
             />
         </Element>
 
@@ -129,7 +136,7 @@ export default () => {
                 )}
                 features = {languages}
                 description="A multilingual program open for k-12 students and adults with systematic learning to satisfy various interets and needs of students with/without experience. Languages include Spanish, Chinese, French, Korean, etc offered at different levels."
-                imageSrc=""
+                imageSrc={spanishflyer}
                 textOnLeft = {false}
             />
         </Element>

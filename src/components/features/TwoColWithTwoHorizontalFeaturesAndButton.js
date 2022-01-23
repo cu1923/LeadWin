@@ -13,7 +13,7 @@ import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sig
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
-const ImageColumn = tw(Column)`md:w-4/12 flex-shrink-0 relative`;
+const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 relative`;
 const TextColumn = styled(Column)(props => [
   tw`md:w-6/12 mt-16 md:mt-0`,
   props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
@@ -31,6 +31,12 @@ const DecoratorBlob = tw(
 
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
+// const Icon= styled.div`
+//   ${tw`border text-center rounded-full p-5 flex-shrink-0`}
+//   img {
+//     ${tw`w-16 h-16`}
+// }`;
+
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
@@ -47,8 +53,8 @@ const FeatureIconContainer = styled.div`
     props.iconRoundedFull && tw`rounded-full`,
     props.iconFilled && tw`border-0 bg-primary-500 text-gray-100`,
   ]}
-  svg {
-    ${tw`w-5 h-5`}
+  img {
+    ${tw`w-8 h-8`}
   }
 `;
 const FeatureHeading = styled.div`
@@ -134,7 +140,7 @@ export default ({
                       iconRoundedFull={iconRoundedFull}
                       css={feature.iconContainerCss || iconContainerCss}
                     >
-                      {<feature.Icon />}
+                      <img src={feature.Icon} alt="no show"></img>
                     </FeatureIconContainer>
                     <FeatureHeading>{feature.title}</FeatureHeading>
                   </FeatureHeadingContainer>

@@ -73,7 +73,7 @@ const SlantedBackground = styled.span`
   }
 `;
 
-const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-xl xl: font-bold font-serif italic`;
+const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-xl xl: font-bold`;
 
 const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-400 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
 
@@ -121,7 +121,7 @@ export default () => {
       <HeroContainer>
         <StyledHeader 
         logoLink = {(
-        <LogoLink home = {true} href="/">
+        <LogoLink href="/">
           <img src={logolink} alt="logo" />
           <span className="font-face">Lead Win </span>
         </LogoLink>

@@ -6,6 +6,12 @@ import styled from "styled-components";
 import Header from "components/headers/light.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Programs from "components/features/TwoColWithTwoHorizontalFeaturesAndButton"
+import icon1 from "images/icon1.png"
+import icon2 from "images/icon2.png"
+import icon3 from "images/icon3.png"
+import icon4 from "images/icon4.png"
+import icon5 from "images/icon5.png"
+import icon6 from "images/icon6.png"
 
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
@@ -18,39 +24,39 @@ const Intro = tw.p`mt-4 text-sm md:text-base lg:text-lg mx-12 my-8 font-medium l
 
 const english = [[
     {
-        Icon: BriefcaseIcon,
+        Icon: icon1,
         title: "K-3rd Phonics and AR Reading",
         description: "Open to k-3rd students with an emphasis on spelling, vocabulary building, reading fluency, AR leveling, and ultimately the development of genuine interest in reading and good reading habits.",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     },
     {
-        Icon: SvgDotPattern,
+        Icon: icon2,
         title: "K-6th Reading Comprehension",
         description: "Reading fluency, Vocabulary building, Reading Comprehension combined with some grammar.",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     }],[
     {
-        Icon: MoneyIcon,
+        Icon: icon3,
         title: "3rd-12th Critical Writing/Essay Writing",
         description: "Focusing on different types of writing training. Grammar and vocabulary expansion are the important part of this course, critical thinking and logic training as an important addition makes the course more difficult and challenging. ",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     },
     {
-        Icon: MoneyIcon,
+        Icon: icon4,
         title: "6-12th Literature Appreciation and Analysis",
         description: "Intended for 6-12th stduents with a focus on literacy, literary appreciation and analysis, especially for those enrolled in English Honors in need of academic assistance.",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     }],[
     {
-        Icon: MoneyIcon,
+        Icon: icon5,
         title: "ELD/ESL",
-        description: "Made for non-native speakers of English, perfect for those who haven’t been in the US for a long time or are currently part of the ELD//ESL program in school.",
+        description: "Made for non-native speakers of English, perfect for those who haven’t been in the US for a long time or are currently part of the ELD/ESL program in school aiming to ascend into the regular level.",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     },
     {
-        Icon: MoneyIcon,
+        Icon: icon6,
         title: "International Students",
-        description: "Personalizeid English tutoring tailored for foreign students outside of the US. Offered along with supplemental lessons subjected to American public school standards.",
+        description: "Personalizeid English tutoring tailored for foreign students outside of the US. Supplemental lessons aligned to American public school standards offered if needed.",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     }]
 ]
@@ -58,13 +64,13 @@ const english = [[
 const math = [
     [ 
         {
-            Icon: BriefcaseIcon,
+            Icon: icon2,
             title: "Common Core Math \n (K-8th)",
             description: "Update to date instructions on the student’s homework with abundant practice on the side in accordance with the Common Core State Standards to effectively boost his or her grade in Math.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
-            Icon: SvgDotPattern,
+            Icon: icon3,
             title: "Singapore Math (k-6th)",
             description: "Employs the Singapore Math Intensive Practice to train students with challenging Math problems, suitable for those who are beyond the school’s level. ",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
@@ -72,13 +78,13 @@ const math = [
     ],
     [
         {
-            Icon: BriefcaseIcon,
+            Icon: icon4,
             title: "Maths Olypiad/AMC",
             description: "Curriculum based on Singaporean Math Olympiad and sample competition problems. Designed for students interested in Math Olympiad competitions such as the American Mathematics Competition. ",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
-            Icon: SvgDotPattern,
+            Icon: icon1,
             title: "Accelerated/\nAdvanced Placement",
             description: "Tailored for students going into the honors program. Course content varies depending on the school district. \n The Advanced Placement Test Program provides tutoring specific for AP tests.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
@@ -89,13 +95,13 @@ const math = [
 const tutoring = [
     [
         {
-            Icon: BriefcaseIcon,
+            Icon: icon5,
             title: "English",
             description: "Create an account with us using Google or Facebook.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
-            Icon: SvgDotPattern,
+            Icon: icon6,
             title: "Math",
             description: "Browse and Download the template that you like from the marketplace.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
@@ -103,13 +109,13 @@ const tutoring = [
     ],
     [
         {
-            Icon: BriefcaseIcon,
+            Icon: icon3,
             title: "History",
             description: "Create an account with us using Google or Facebook.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
-            Icon: SvgDotPattern,
+            Icon: icon2,
             title: "Bio",
             description: "Browse and Download the template that you like from the marketplace.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
@@ -117,7 +123,7 @@ const tutoring = [
     ],
     [
         {
-            Icon: BriefcaseIcon,
+            Icon: icon1,
             title: "Physics",
             description: "Create an account with us using Google or Facebook.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`

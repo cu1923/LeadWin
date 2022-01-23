@@ -6,8 +6,9 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import MainFeature1 from "components/features/TwoColWithButton.js";
-// import MainFeature2 from "components/features/TwoColSingleFeatureWithStats.js";
-// import MainFeature3 from "components/features/TwoColSingleFeatureWithStats2.js";
+import icon1 from "images/about1.png"
+import icon2 from "images/about2.png"
+import icon3 from "images/about3.png"
 import Features from "components/features/ThreeColSimple.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
 import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
@@ -39,27 +40,24 @@ export default () => {
         heading="Emphasis on individual development"
         cards={[
           {
-            imageSrc: SupportIconImage,
+            imageSrc: icon1,
             title: "Personalized Learning",
             description: "Facilitated learning by evaluating and customizing a suitable learning plan that fulfills the needs of every student."
           },
           { 
-            imageSrc: ShieldIconImage,
+            imageSrc: icon3,
             title: "Quality Small Classes",
-            description: "A class of less than 6 students preserves a attentive and orderly learning environment in which students are more willing to participate."
+            description: "A class of less than 6 students preserves an attentive and orderly learning environment in which students are more willing to participate."
           },
           {
-            imageSrc: CustomerLoveIconImage,
+            imageSrc: icon2,
             title: "Skilled Educators",
             description: "Employs a rigorous selection process to ensure that the most qualified and competent teachers are serving every parent and student."
           },
         ]}
         linkText=""
       />
-      <TeamCardGrid 
-        subheading={<Subheading>Our Team</Subheading>}
-        description=""
-      />
+      <br></br> <br></br> <br></br>  <br></br> 
       <Footer />
     </AnimationRevealPage>
   );

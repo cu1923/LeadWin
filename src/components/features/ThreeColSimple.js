@@ -26,8 +26,9 @@ const Card = styled.a`
   .imageContainer {
     ${tw`text-center rounded-full p-4 bg-gray-100`}
     img {
-      ${tw`w-8 h-8`}
+      ${tw`w-16 h-16`}
     }
+    margin-bottom:15px;
   }
 
   .title {

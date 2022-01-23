@@ -27,10 +27,11 @@ const Description = tw.p`mt-4 text-sm md:text-base lg:text-lg mx-24 font-medium 
 
 
 export default ({
-  subheading = "Lead Win Presents",
+  subheading = "YoumeCan Presents",
   heading = "Teachers",
   testimonials = [ [] ],
-  description= ""
+  description= "",
+  bi = false
 }) => {
   return (
     <Container>
@@ -47,7 +48,7 @@ export default ({
                     <Testimonial>
                       <Image src={teacher.imageSrc} />
                       <Quote>"{teacher.quote}"</Quote>
-                      <CustomerName>- {teacher.customerName}</CustomerName> <br></br>
+                      <CustomerName>- {teacher.customerName} {teacher.bi && <span tw="text-primary-800"> (Bilingual)</span>} </CustomerName><br></br>
                       <PrimaryButton as="a" href="/demo"> view demo</PrimaryButton>
                     </Testimonial>
                   </TestimonialContainer>
