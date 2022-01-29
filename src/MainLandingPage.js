@@ -23,6 +23,9 @@ import morgan from "images/morgan.jpg"
 import cici from "images/cici.jpg"
 import molly from "images/molly.jpg"
 import brenda from "images/brenda.jpg"
+import marsh from "images/marsh.jpg"
+import heather from "images/heather.jpg"
+import frances from "images/frances.jpg"
 import female from "images/female-user.png"
 
 export default () => {
@@ -47,7 +50,9 @@ export default () => {
             description: "Certified English teacher "
           },
           { imageSrc: brenda, title: "Brenda", description: "Certified Math and English teacher" },
-          { imageSrc: cici, title: "Cici", description: "Certified Chinese teacher" },
+          { imageSrc: heather, title: "Heather", description: "Certified English teacher" },
+          { imageSrc: marsh, title: "Brittany", description: "Certified Math and Spanish teacher" },
+          { imageSrc: frances, title: "Frances", description: "Certified English teacher" },
         ]}
         button = {"Learn more about our teachers"}
         description= {"Our team of educators originate from across the United States with profound education background, certified capabilities and years of experience. Our professional teachers will provide the highest quality classes, the most creative learning environment and a variety of class materials for your child to prosper on this long road of knowledge seeking!"}
@@ -73,9 +78,7 @@ export default () => {
       ]}
       />
       <MainFeature
-        bigheading = {
-          <> Check Out A Demo Class!</>
-        }
+        heading = {<>Check Out a <span tw="text-primary-400"> Demo</span></>}
         subheading={<Subheading> Demo Class </Subheading>}
         imageSrc={heroScreenshotImageSrc}
         imageBorder={true}

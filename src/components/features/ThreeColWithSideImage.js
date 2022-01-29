@@ -36,7 +36,7 @@ const VerticalSpacer = tw.div`mt-10 w-full`
 const Image = tw.img`w-40 h-40 rounded-full`;
 
 const Column = styled.div`
-  ${tw`md:w-1/2 lg:w-1/2 mx-12 max-w-sm`}
+  ${tw`md:w-1/2 lg:w-1/3 max-w-sm`}
 `;
 
 const Card = styled.div`
@@ -57,7 +57,7 @@ const Card = styled.div`
   }
 
   .description {
-    ${tw`mt-1 sm:mt-4 font-medium text-lg text-secondary-100 leading-loose`}
+    ${tw`mt-1 sm:mt-4 font-medium text-secondary-100 leading-loose`}
   }
 `;
 

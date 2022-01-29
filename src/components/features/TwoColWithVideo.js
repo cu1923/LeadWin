@@ -10,7 +10,7 @@ import {ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
 const Container = tw.div`relative pb-48`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-8 py-1 md:py-1 items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
-const ImageColumn = tw(Column)`md:w-6/12 pl-4 flex-shrink-0 relative`;
+const ImageColumn = tw(Column)`md:w-6/12 pl-4 max-w-screen-lg sm: w-1/4 flex-shrink-0 relative`;
 const TextColumn = styled(Column)(props => [
   tw`md:w-6/12 mt-16 md:mt-0`,
   props.textOnLeft ? tw`md:mr-12 lg:mr-12 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
@@ -60,7 +60,7 @@ export default ({
   return (
     <Container>
       <TwoColumn>
-        <ImageColumn>
+        <ImageColumn >
           <iframe width="650" height="400" src={embed} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
@@ -79,3 +79,4 @@ export default ({
     </Container>
   );
 };
+

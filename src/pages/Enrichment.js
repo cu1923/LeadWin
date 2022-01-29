@@ -37,11 +37,11 @@ const subjects = ["Coding", "Languages", "Speech & Public Speaking", "Debate", "
 const Header1 = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center`;
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row px-12`;
 const TabsControl = styled.div`
-    ${tw`flex flex-wrap bg-gray-200 px-2 rounded leading-none xl:mt-0`}
+    ${tw`flex flex-wrap bg-gray-200 px-2 py-2 rounded leading-none xl:mt-0`}
 `;
 const TabControl = styled.div`
   
-  ${tw`cursor-pointer px-6 py-3 mt-2 sm:mt-0 sm:mr-2 last:mr-0 text-gray-600 font-medium rounded-sm transition duration-300 text-sm sm:text-base w-1/2 sm:w-auto text-center`}
+  ${tw`cursor-pointer px-6 py-3 mt-2 sm:mt-0 sm:mr-2 last:mr-0 text-gray-600 font-medium rounded-sm transition duration-300 text-sm sm:text-base text-center`}
   &:hover {
     ${tw`bg-gray-300 text-gray-700`}
   }

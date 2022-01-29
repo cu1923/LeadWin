@@ -32,7 +32,7 @@ const NavbarDropdown = styled.div`
   `;
 
 const DropdownLink = tw.a`
-    text-lg my-2 lg:text-xs lg:my-0
+    text-xs sm:text-xs my-2 lg:text-xs lg:my-0
     font-semibold tracking-wide transition duration-300
     pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-400
 `;

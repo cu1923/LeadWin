@@ -32,7 +32,7 @@ const NavbarDropdown = styled.div`
   `;
 
 const DropdownLink = tw.a`
-    text-lg my-2 lg:text-xs lg:my-0
+    text-xs sm:text-xs my-2 lg:text-xs lg:my-0
     font-semibold tracking-wide transition duration-300
     pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-400
 `;
@@ -111,11 +111,11 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       <NavbarDropdown>
         Programs
         <NavbarDropdownContent>
-          <DropdownLink href="/academic"> Academic Program </DropdownLink> &ensp;
+          <DropdownLink href="/academic"> Academic Program </DropdownLink> <br></br>
           <DropdownLink href="/enrichment">Enrichment Program</DropdownLink> <br></br>
-          <DropdownLink href="/summercamp">Summer Camp</DropdownLink> &ensp; &ensp; &ensp;
+          <DropdownLink href="/summercamp">Summer Camp</DropdownLink><br></br>
           <DropdownLink href="/privatetutor">Private Tutoring</DropdownLink> <br></br>
-          <DropdownLink href="/pretest">Test Prep</DropdownLink> &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;
+          <DropdownLink href="/pretest">Test Prep</DropdownLink><br></br>
           <DropdownLink href="/collegeprep">College Planning</DropdownLink> <br></br>
         </NavbarDropdownContent>
       </NavbarDropdown>

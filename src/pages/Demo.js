@@ -28,17 +28,17 @@ export default () => {
         embed="https://www.youtube.com/embed/LzaSVRNI4GQ"
       />
       <MainFeature1
-        subheading={<Subheading>Teacher name</Subheading>}
-        heading="Class Name"
+        subheading={<Subheading>Frances</Subheading>}
+        heading="English"
+        description="This is one of our most professional teachers, Ms. Frannie's English class aiming to enhance students' English listening, writing and speaking skills. "
         buttonRounded={false}
         primaryButtonText="Sign Up"
-        imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
+        embed="https://www.youtube.com/embed/2pUcEx8EOdA"
         textOnLeft={false}
       />
-      <Cards>
-        
-      </Cards>
       <Footer />
     </AnimationRevealPage>
   );
 };
+
+<iframe width="1424" height="620" src="https://www.youtube.com/embed/2pUcEx8EOdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
