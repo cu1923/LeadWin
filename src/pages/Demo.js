@@ -20,20 +20,37 @@ export default () => {
     <AnimationRevealPage>
       <Header />
       <MainFeature1
-        subheading={<Subheading>Molly</Subheading>}
+        subheading={<Subheading> Ms. Molly</Subheading>}
         heading="Oral Spanish"
         buttonRounded={false}
         description="This is one of our most popular teachers, Ms. Molly’s Spanish Oral class for k-3rd students who already have some experience with the Spanish language."
         primaryButtonText="Sign Up"
-        embed="https://www.youtube.com/embed/LzaSVRNI4GQ"
+        embed="https://www.youtube.com/embed/LzaSVRNI4GQ?rel=0"
       />
       <MainFeature1
-        subheading={<Subheading>Frances</Subheading>}
+        subheading={<Subheading>Ms. Frances</Subheading>}
         heading="English"
         description="This is one of our most professional teachers, Ms. Frannie's English class aiming to enhance students' English listening, writing and speaking skills. "
         buttonRounded={false}
         primaryButtonText="Sign Up"
-        embed="https://www.youtube.com/embed/2pUcEx8EOdA"
+        embed="https://www.youtube.com/embed/2pUcEx8EOdA?rel=0"
+        textOnLeft={false}
+      />
+      <MainFeature1
+        subheading={<Subheading>Ms. Brenda</Subheading>}
+        heading="Math"
+        description="Singapore Math Intensive Practice for Third Graders. "
+        buttonRounded={false}
+        primaryButtonText="Sign Up"
+        embed="https://www.youtube.com/embed/vRJg1ovWzZQ?rel=0"
+      />
+      <MainFeature1
+        subheading={<Subheading>Mr. Wilder</Subheading>}
+        heading="Spanish"
+        description="Advanced Spanish class - Level 3 /n（Grammar & Conversational Spanish)"
+        buttonRounded={false}
+        primaryButtonText="Sign Up"
+        embed="https://www.youtube.com/embed/7OVZDnVhboY?rel=0"
         textOnLeft={false}
       />
       <Footer />

@@ -14,6 +14,7 @@ import gen from "images/gen.jpg"
 import uriyah from "images/uriyah.jpg"
 import yujun from "images/yujun.jpg"
 import nina from "images/nina.jpg"
+import johanna from "images/johanna.png"
 
 const teachers = [[
     {
@@ -74,12 +75,18 @@ const teachers = [[
       customerName: "Uriyah"
     },
     {
+      imageSrc:johanna,
+      quote:
+        "I'm Johanna, I currently hold a valid TEFL certificate and have a Bachelor's Degree in Arts, with 13 years of experience teaching students in English grammar, phonics, reading, and writing. I help create a fun environment tailored to the students' specific needs!",
+      customerName: "Johanna"
+    }
+  ],[
+    {
       imageSrc:yujun,
       quote:
         "I’m Yujun. Gained my master’s degree in Mathematics Education at Ohio State University with 4 years of teaching experience in mathematics for both Chinese and American students, including helping students compete in the Olympic Math Competition in China. ",
       customerName: "Yujun"
-    }
-  ],[
+    },
     {
       imageSrc:cici,
       quote:
