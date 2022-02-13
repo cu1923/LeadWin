@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from 'react'
 import styled from "styled-components";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -7,6 +7,8 @@ import { SectionHeading as Heading, Subheading as SubheadingBase } from "compone
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
 import { PrimaryButton } from "components/misc/Buttons";
+import ReactDOM from 'react-dom'
+import ModalVideo from 'react-modal-video'
 
 const Subheading = tw(SubheadingBase)`text-center`;
 const Testimonials = tw.div`flex flex-col lg:flex-row items-center lg:items-stretch`;
@@ -33,8 +35,14 @@ export default ({
   description= "",
   bi = false
 }) => {
+  const [isOpen, setOpen] = useState(false)
   return (
     <Container>
+      <React.Fragment>
+			<ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
+
+			<button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
+		</React.Fragment>
       <ContentWithPaddingXl>
         {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading> 

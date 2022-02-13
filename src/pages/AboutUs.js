@@ -1,8 +1,6 @@
 import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
-import styled from "styled-components"; //eslint-disable-line
-import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import MainFeature1 from "components/features/TwoColWithButton.js";
@@ -10,12 +8,9 @@ import icon1 from "images/about1.png"
 import icon2 from "images/about2.png"
 import icon3 from "images/about3.png"
 import Features from "components/features/ThreeColSimple.js";
-// import Features from "components/features/ThreeColWithSideImage.js";
-import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
+import one from "images/aboutpic1.png"
+import two from "images/aboutpic2.jpg"
 
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import CustomerLoveIconImage from "images/simple-icon.svg";
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
@@ -23,16 +18,16 @@ export default () => {
     <AnimationRevealPage>
       <Header />
       <MainFeature1
-        subheading={<Subheading>About LEAD WIN</Subheading>}
+        subheading={<Subheading>About YoumeCan</Subheading>}
         heading="The most devoted education platform"
-        description="LEAD WIN is an online education platform located in South California aiming to provide personalized and comprehensive learning system as well as counseling for k-12th students. Our teachers are talented and professional educators selected from different states across the U.S. with thorough backgrounds in education and affluent experience. "
-        imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        description="YoumeCan is an online education platform located in South California aiming to provide personalized and comprehensive learning system as well as counseling for k-12th students. Our teachers are talented and professional educators selected from different states across the U.S. with thorough backgrounds in education and affluent experience. "
+        imageSrc= {one}
       />
       <MainFeature1
         subheading={<Subheading>Our Vision</Subheading>}
         heading="Let every child's dream come true"
         description="Our mission statement: let the interests guide and the funs lead. We aim to fully unravel a child’s potential and let them develop effective self-learning and analyzing abilities. In addition, we endeavor to cultivate children’s interest and help them achieve self-management, after which they will be able to set goals in life and plan their very future for themselves with confidence."
-        imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
+        imageSrc= {two}
         textOnLeft={false}
       />
       <Features

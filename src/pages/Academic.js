@@ -12,10 +12,15 @@ import icon3 from "images/icon3.png"
 import icon4 from "images/icon4.png"
 import icon5 from "images/icon5.png"
 import icon6 from "images/icon6.png"
-
-import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
-import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
-import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+import literature from "images/literature.png"
+import international from "images/international.png"
+import eld from "images/eld.png"
+import eng from "images/eng.jpeg"
+import m from "images/math.jpeg"
+import common from "images/common.png"
+import ap from "images/ap.png"
+import olympiad from "images/olympiad.png"
+import sing from "images/sing.png"
 
 const subjects = ["English", "Math", "Private Tutoring"]
 const Header1 = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center`;
@@ -25,38 +30,32 @@ const Intro = tw.p`mt-4 text-sm md:text-base lg:text-lg mx-12 my-8 font-medium l
 const english = [[
     {
         Icon: icon1,
-        title: "K-3rd Phonics and AR Reading",
-        description: "Open to k-3rd students with an emphasis on spelling, vocabulary building, reading fluency, AR leveling, and ultimately the development of genuine interest in reading and good reading habits.",
+        title: "K-3rd Phonics \nAR Reading",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     },
     {
         Icon: icon2,
         title: "K-6th Reading Comprehension",
-        description: "Reading fluency, Vocabulary building, Reading Comprehension combined with some grammar.",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     }],[
     {
         Icon: icon3,
-        title: "3rd-12th Critical Writing/Essay Writing",
-        description: "Focusing on different types of writing training. Grammar and vocabulary expansion are the important part of this course, critical thinking and logic training as an important addition makes the course more difficult and challenging. ",
+        title: "3rd-12th Critical Writing \nEssay Writing",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     },
     {
-        Icon: icon4,
-        title: "6-12th Literature Appreciation and Analysis",
-        description: "Intended for 6-12th stduents with a focus on literacy, literary appreciation and analysis, especially for those enrolled in English Honors in need of academic assistance.",
+        Icon: literature,
+        title: "6-12th Literature Appreciation & Analysis",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     }],[
     {
-        Icon: icon5,
+        Icon: eld,
         title: "ELD/ESL",
-        description: "Made for non-native speakers of English, perfect for those who haven’t been in the US for a long time or are currently part of the ELD/ESL program in school aiming to ascend into the regular level.",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     },
     {
-        Icon: icon6,
+        Icon: international,
         title: "International Students",
-        description: "Personalizeid English tutoring tailored for foreign students outside of the US. Supplemental lessons aligned to American public school standards offered if needed.",
         iconContainerCss: tw`bg-teal-300 text-teal-800`
     }]
 ]
@@ -64,13 +63,13 @@ const english = [[
 const math = [
     [ 
         {
-            Icon: icon2,
+            Icon: common,
             title: "Common Core Math \n (K-8th)",
             description: "Update to date instructions on the student’s homework with abundant practice on the side in accordance with the Common Core State Standards to effectively boost his or her grade in Math.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
-            Icon: icon3,
+            Icon: sing,
             title: "Singapore Math (k-6th)",
             description: "Employs the Singapore Math Intensive Practice to train students with challenging Math problems, suitable for those who are beyond the school’s level. ",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
@@ -78,13 +77,13 @@ const math = [
     ],
     [
         {
-            Icon: icon4,
-            title: "Maths Olypiad/AMC",
+            Icon: olympiad,
+            title: "Maths Olympiad/AMC",
             description: "Curriculum based on Singaporean Math Olympiad and sample competition problems. Designed for students interested in Math Olympiad competitions such as the American Mathematics Competition. ",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
-            Icon: icon1,
+            Icon: ap,
             title: "Accelerated/\nAdvanced Placement",
             description: "Tailored for students going into the honors program. Course content varies depending on the school district. \n The Advanced Placement Test Program provides tutoring specific for AP tests.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
@@ -183,8 +182,8 @@ export default () => {
                     </>
                 )}
                 features = {english}
-                imageSrc=""
-                description="Designed for public and private school students from k-12th based on Common Core State Standards. On top of classwork, the program covers external content to further enrich the student’s knowledge while improving his or her current grades in school. In addition, there will be private tutoring available for ELD and ESL students to best accomodate each individual need. "
+                imageSrc={eng}
+                description="Designed for public and private school students from k-12th based on Common Core State Standards. The program aims to improve students' grades in school and also best accomodate each individual need."
             />
         </Element>
 
@@ -197,9 +196,9 @@ export default () => {
                 </>
             )}
             features = {math}
-            imageSrc=""
+            imageSrc={m}
             textOnLeft = {false}
-            description="Created for private and public school k-12 students. The program contains four components, Common Core (aligned to school progress), Singapore Math (more challenging than school work), Math Olympiad, and Advanced classes (Accelerated Math or AP). "
+            description="Created for private and public school k-12th students. The program contains four components, Common Core (aligned to school progress), Singapore Math (more challenging than school work), Advanced classes (Accelerated Math or AP) and Math Olympiad/AMC."
             />
         </Element>
 

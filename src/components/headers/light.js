@@ -136,7 +136,6 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      <span className="font-face">Lead Win </span>
     </LogoLink>
   );
 

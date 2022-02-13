@@ -7,10 +7,10 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import flyer1 from "images/flyer1.jpg"
 import flyer2 from "images/flyer2.jpg"
-
-import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
-import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
-import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+import summer1 from "images/summer1.png"
+import summer2 from "images/summer2.png"
+import summer3 from "images/summer3.png"
+import summer4 from "images/summer4.png"
 
 const subjects = []
 
@@ -28,8 +28,7 @@ const TabControl = styled.div`
 `;
 
 const Image = styled.img`
-  ${tw`px-12`}
-  height:460px;
+  ${tw`px-4`}
 `;
 
 const Flyer = tw.div`flex flex-col md:flex-row max-w-screen-xl mx-auto items-center`;
@@ -67,8 +66,8 @@ export default () => {
         <Intro>A full-day program lasting 10 weeks every summer. Content ranges from academic subjects to non-academic, interest-oriented classes. Actual subjects include English, Math, Programming, Spanish, Chinese, Public Speaking, Debate, etc. In the mean time, personalized private tutoring is open in all subjects for students with need as well. </Intro>
 
         <Flyer>
-              <Image src={flyer1} alt="flyer1" />
-              <Image src={flyer2} alt="flyer2" />
+              <Image src={summer3} alt="flyer1" />
+              <Image src={summer1} alt="flyer2" />
         </Flyer>
          <br></br><br></br><br></br>
         <Footer/>

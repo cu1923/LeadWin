@@ -9,15 +9,21 @@ import Programs from "components/features/TwoColWithTwoHorizontalFeaturesAndButt
 import { ReactComponent as Blobone } from "images/blob1.svg";
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 import { ReactComponent as Blobthree } from "images/blob3.svg";
-import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
-import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
-import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
-import spanishflyer from "images/spanishflyer.jpg"
+import esp from "images/esp.png"
+import chin from "images/china.png"
+import korea from "images/korean.png"
+import french from "images/french.png"
+
 import icon2 from "images/icon2.png"
 import icon3 from "images/icon3.png"
 import icon4 from "images/icon4.png"
 import icon5 from "images/icon5.png"
-import codingflyer from "images/codingflyer.jpg"
+import codingflyer from "images/coding.jpeg"
+import lang from "images/language.jpeg"
+import speech from "images/speaking.jpeg"
+import debate from "images/debate.jpeg"
+import art from "images/art.png"
+
 
 
 const DecoratorBlob = styled(SvgDecoratorBlob3)`
@@ -53,13 +59,13 @@ const Intro = tw.p`mt-4 text-sm md:text-base lg:text-lg mx-12 my-8 font-medium l
 const languages = [
     [ 
         {
-            Icon: icon2,
+            Icon: esp,
             title: "Spanish",
             description: "Systematic course design with 6 levels ranging from beginner to advanced level conversational Spanish.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
-            Icon: icon4,
+            Icon: chin,
             title: "Chinese",
             description: "Methodical course structure with 6 difficulty levels using Chinese language textbooks《中文》, 《美洲华语》.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
@@ -67,13 +73,13 @@ const languages = [
     ],
     [
         {
-            Icon: icon5,
+            Icon: french,
             title: "French",
             description: "Ordered course system with beginner, intermediate and advanced levels covering introductory French to fluent conversations.  ",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
-            Icon: icon3,
+            Icon: korea,
             title: "Korean",
             description: "Standardized exploration of the Korean language at 3 different proficiency levels with an emphasis on listening, speaking and reading.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
@@ -136,7 +142,7 @@ export default () => {
                 )}
                 features = {languages}
                 description="A multilingual program open for k-12 students and adults with systematic learning to satisfy various interets and needs of students with/without experience. Languages include Spanish, Chinese, French, Korean, etc offered at different levels."
-                imageSrc={spanishflyer}
+                imageSrc={lang}
                 textOnLeft = {false}
             />
         </Element>
@@ -150,8 +156,8 @@ export default () => {
                     </>
                 )}
                 features = {[[]]}
+                imageSrc = {speech}
                 description="Designed for k-8th students to establish confidence and control over different aspects of body language (eye contact, voice modjlation, facial expressions) by practicing speech and public speaking. Course content includes the principles and application of valid speech, composition of text and impromtu speech."
-                imageSrc=""
             />
         </Element>
 
@@ -164,7 +170,7 @@ export default () => {
                     </>
                 )}
                 features = {[[]]}
-                imageSrc=""
+                imageSrc={debate}
                 description="A program for 2-5th graders focusing on fundamental debate skills with emphasis on Research and Critical thinking, logical and analytical skills, organized thoughts and forming an Opinion, as well as basic skill training such as flowing, intonation, delivery of the speech and crossfire, etc. Classes to offer include Lincoln Douglas Debate, Public Forum Debate and Congress Debate."
                 textOnLeft = {false}
             />
@@ -179,7 +185,7 @@ export default () => {
                     </>
                 )}
                 features = {[[]]}
-                imageSrc=""
+                imageSrc={art}
                 description="Art classes for the younger kids including Drawing, Creative color painting, Monochromatic or Color Scheme Painting, Pattern Designs, Sketch and Crafts as well."
             />
         </Element>

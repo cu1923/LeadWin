@@ -16,6 +16,7 @@ import yujun from "images/yujun.jpg"
 import nina from "images/nina.jpg"
 import johanna from "images/johanna.png"
 
+
 const teachers = [[
     {
       imageSrc: morgan,
@@ -34,7 +35,7 @@ const teachers = [[
     {
       imageSrc: brenda,
       quote:
-        "I have been an elementary bilingual teacher for 13 years and an AVID certified teacher trainer. I won Teacher of the Year twice for closing gaps in reading, math, and science. I am a winning elementary robotics coach as well. ",
+        "I have been an elementary bilingual teacher and an AVID certified trainer with an Masters degree for 13 years. I won Teacher of the Year twice for closing gaps in reading, math, science and coached elementary robotics as well. ",
       customerName: "Brenda",
       bi: true
     },
@@ -42,21 +43,21 @@ const teachers = [[
     {
       imageSrc:marsh,
       quote:
-        "I am Brittany Marsh, a TESOL certificated teacher. I graduated from UW Eu Claire with a Bachelors of Sociology and a minor in Spanish. I am experienced with teaching English reading & creative writing for 2nd, 4th, 7th graders and now teach high school English!",
+        "I am Brittany Marsh, a TESOL certified teacher. I graduated from UW Eu Claire with a Bachelors of Sociology and a minor in Spanish. I am experienced with teaching English reading & creative writing for 2nd, 4th, 7th graders and now teach high school English!",
       customerName: "Brittany",
       bi: true
     },
     {
       imageSrc: gen,
       quote:
-        "I‘m Genevieve. I’ve obtaining my B.S from CSULA and Associates of Liberal Arts. I have been teaching English, Science and Spanish with children of all ages for around 4 years now. I have a passion for working with children and watching them grow and learn!",
+        "I‘m Genevieve. I’ve obtained my B.S from CSULA and Associates of Liberal Arts. I have been teaching English, Science and Spanish with children of all ages for around 4 years now. I have a passion for working with children and watching them grow and learn!",
       customerName: "Gen",
       bi: true
     }, 
     {
       imageSrc: frances,
       quote:
-        "I’m TEFL Certificate teacher with a Bachelor of Arts in International Studies and over 5 years of experience teaching English in classrooms and online. I am proficient in teaching speaking and reading fluency and comprehension, vocabulary, and many other skills. ",
+        "I’m a TEFL certified teacher with a Bachelor of Arts in International Studies and over 5 years of experience teaching English in classrooms and online. I am proficient in teaching speaking and reading fluency and comprehension, vocabulary, and many other skills. ",
       customerName: "Frances",
       bi: true
     }
@@ -66,7 +67,6 @@ const teachers = [[
       quote:
         "I’m Heather, dedicated and student-focused educator with six years of teaching experience. Area of specialty includes language arts and literacy. In addition to a Bachelor of Science in Elementary Education, I also hold a (TEFL) certification. ",
       customerName: "Heather",
-      bi: true
     },
     {
       imageSrc:uriyah,
@@ -84,7 +84,7 @@ const teachers = [[
     {
       imageSrc:yujun,
       quote:
-        "I’m Yujun. Gained my master’s degree in Mathematics Education at Ohio State University with 4 years of teaching experience in mathematics for both Chinese and American students, including helping students compete in the Olympic Math Competition in China. ",
+        "I’m Yujun. Gained my master’s degree in Mathematics Education at Ohio State University with 4 years of teaching experience in mathematics for both Chinese and American students, including helping students compete in the Math Olympiad in China. ",
       customerName: "Yujun"
     },
     {

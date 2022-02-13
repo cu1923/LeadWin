@@ -20,13 +20,15 @@ import icon4 from "images/icon4.png"
 import icon5 from "images/icon5.png"
 import icon6 from "images/icon6.png"
 import morgan from "images/morgan.jpg"
-import cici from "images/cici.jpg"
 import molly from "images/molly.jpg"
 import brenda from "images/brenda.jpg"
 import marsh from "images/marsh.jpg"
 import heather from "images/heather.jpg"
 import frances from "images/frances.jpg"
 import female from "images/female-user.png"
+import parent2 from "images/parent2.png"
+import parent3 from "images/parent3.png"
+import parent4 from "images/parent4.png"
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-400`;
@@ -50,7 +52,7 @@ export default () => {
             description: "Certified English teacher "
           },
           { imageSrc: brenda, title: "Brenda", description: "Certified Math and English teacher" },
-          { imageSrc: heather, title: "Heather", description: "Certified English teacher" },
+          { imageSrc: heather, title: "Heather", description: "Certified English and Math teacher" },
           { imageSrc: marsh, title: "Brittany", description: "Certified Math and Spanish teacher" },
           { imageSrc: frances, title: "Frances", description: "Certified English teacher" },
         ]}
@@ -86,7 +88,7 @@ export default () => {
         imageDecoratorBlob={true}
         primaryButtonText = "See more demo classes"
         primaryButtonUrl = "/demo"
-        embed="https://www.youtube.com/embed/LzaSVRNI4GQ"
+        embed="https://www.youtube.com/embed/LzaSVRNI4GQ?rel=0"
       />
       <Reviews 
         subheading = {"Feedback From Parents"}
@@ -95,31 +97,31 @@ export default () => {
         testimonials = {[
           {
             customerName: "Parent",
-            customerProfile: "Aiden's mother",
+            customerProfile: "Jeremy's mother",
             imageSrc: female,
             quote:
-              "My son Aiden is enrolled in the third grade English class. The teachers here are fantastic! My child has always hated online classes, but now he is attending every class on time. As a parent, I couldn’t be more grateful. With the systematic learning, my son not only improved his grade in English significantly, but also made so many friends from different regions. A big thank you to YoumeCan for providing such a wonderful platform for education!"
+              "My son Jeremy is enrolled in the third grade English class. The teachers here are fantastic! My child has always hated online classes, but now he is attending every class on time. As a parent, I couldn’t be more grateful. With the systematic learning, my son not only improved his grade in English significantly, but also made so many friends from different regions. A big thank you to YoumeCan for providing such a wonderful platform for education!"
           },
           {
             customerName: "Parent",
             customerProfile: "Celine's mother",
-            imageSrc: female,
+            imageSrc: parent2,
             quote:
               "I am Celine’s parent who’s taking the Spanish Oral class here. It’s been about a year since she has been learning Spanish in school, but she hated speaking the langauge. However, after taking the Spanish class with YoumeCan, she’s a lot more willing to talk in Spanish now. This is a great leap of progress for Celine, and I am just as happy to have witnessed the change. Thank you Ms.Molly for all the hard work and effort! Your students love you and your classes very much!"
           },
           {
             customerName: "Parent",
             customerProfile: "Cherry's mother",
-            imageSrc: female,
+            imageSrc: parent3,
             quote:
               "I am Cherry’s mother, my daughter is doing the Math 1 on 1 tutoring. Cherry disliked Math, and her Math grade in school was very unstable, so I signed her up for a couple of classes just to try it out. She loved it, the teacher seemed professional, too, this cleared my doubt about online school. Now my child has been learning with YoumeCan for a semester already, her grade in Math was increased a great deal too. I would like to sincerely thank Cherry’s Math teacher Yujun, and YoumeCan for being a responsible site for online education. "
           },
           {
             customerName: "Parent",
-            customerProfile: "Jeremy's mother",
-            imageSrc:female,
+            customerProfile: "Daniel's mother",
+            imageSrc:parent4,
             quote:
-              "I am the mother of Jeremy who has been learning coding for over a year now with YoumeCan. From learning Scratch to advancing into Python, I can tell that my son really likes the teacher and the class atmosphere here. What an accomplishment for him to finish so many different projects along with the other kids here! Aside from coding, my little one also signed up for Math and English. I am more than satisfied with what YoumeCan has to offer, many thanks!"
+              "I am the mother of Daniel who has been learning coding for over a year now with YoumeCan. From learning Scratch to advancing into Python, I can tell that my son really likes the teacher and the class atmosphere here. What an accomplishment for him to finish so many different projects along with the other kids here! Aside from coding, my little one also signed up for Math and English. I am more than satisfied with what YoumeCan has to offer, many thanks!"
           }
         ]}
       />
@@ -133,7 +135,7 @@ export default () => {
         description="Here are some frequently asked questions from parents for your reference!"
         faqs={[
           {
-            question: "Where are the teacher of your tutoring center from?",
+            question: "Where are the teachers of your tutoring center from?",
             answer:
               "Our educating team consists of professional teachers from regions across the US."
           },
