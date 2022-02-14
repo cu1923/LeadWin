@@ -47,11 +47,11 @@ export default () => {
       <MainFeature1
         subheading={<Subheading>Ms. Genevieve</Subheading>}
         heading={ <Heading> Spanish <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
-        description="This is Ms. Gen's beginning level Spanish class for lowerclass students who have some prior experience with Spanish and are hoping to expand vocabulary and understanding."
+        description="This is Ms. Gen's beginning level Spanish class for upperclass students who have no prior experience with the Spanish language and are aiming to learn about not only speaking but also reading and writing in Spanish. "
         buttonRounded={false}
         primaryButtonText="Sign Up"
         textOnLeft={false}
-        embed="https://www.youtube.com/embed/jZ1jvT3ulfI?rel=0"
+        embed="https://www.youtube.com/embed/BthDQ5dnTeE?rel=0"
       />
       <MainFeature1
         subheading={<Subheading>Mr. Wilder</Subheading>}
@@ -87,13 +87,13 @@ export default () => {
         textOnLeft={false}
         embed="https://www.youtube.com/embed/0frqTuyUEyA"
       />
-            <MainFeature1
+      <MainFeature1
         subheading={<Subheading>Ms. Genevieve</Subheading>}
         heading={ <Heading> Spanish <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
-        description="This is Ms. Gen's beginning level Spanish class for upperclass students who have no prior experience with the Spanish language and are aiming to learn about not only speaking but also reading and writing in Spanish. "
+        description="This is Ms. Gen's beginning level Spanish class for lowerclass students who have some prior experience with Spanish and are hoping to expand vocabulary and understanding."
         buttonRounded={false}
         primaryButtonText="Sign Up"
-        embed="https://www.youtube.com/embed/BthDQ5dnTeE?rel=0"
+        embed="https://www.youtube.com/embed/jZ1jvT3ulfI?rel=0"
       />
       <Footer />
     </AnimationRevealPage>
