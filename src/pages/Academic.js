@@ -65,13 +65,11 @@ const math = [
         {
             Icon: common,
             title: "Common Core Math \n (K-8th)",
-            description: "Update to date instructions on the student’s homework with abundant practice on the side in accordance with the Common Core State Standards to effectively boost his or her grade in Math.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
             Icon: sing,
             title: "Singapore Math (k-6th)",
-            description: "Employs the Singapore Math Intensive Practice to train students with challenging Math problems, suitable for those who are beyond the school’s level. ",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         }
     ],
@@ -79,13 +77,11 @@ const math = [
         {
             Icon: olympiad,
             title: "Maths Olympiad/AMC",
-            description: "Curriculum based on Singaporean Math Olympiad and sample competition problems. Designed for students interested in Math Olympiad competitions such as the American Mathematics Competition. ",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         },
         {
             Icon: ap,
             title: "Accelerated/\nAdvanced Placement",
-            description: "Tailored for students going into the honors program. Course content varies depending on the school district. \n The Advanced Placement Test Program provides tutoring specific for AP tests.",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
         }
     ]

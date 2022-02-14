@@ -22,7 +22,7 @@ import codingflyer from "images/coding.jpeg"
 import lang from "images/language.jpeg"
 import speech from "images/speaking.jpeg"
 import debate from "images/debate.jpeg"
-import art from "images/art.png"
+import art from "images/art.jpeg"
 
 
 
@@ -31,8 +31,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 `;
 
 const Blob1 = styled(Blobone)`
-  ${tw`pointer-events-none absolute bottom-0 left-0 w-72 transform -translate-x-16 translate-y-500`}
-  opacity: 10%;
+  ${tw`pointer-events-none absolute bottom-0 left-0 w-72 transform -translate-x-16 translate-y-500 opacity-10`}
 `;
 
 const Blob2 = styled(Blobthree)`
