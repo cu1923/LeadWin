@@ -25,7 +25,6 @@ export default () => {
         buttonRounded={false}
         description="This is Ms. Molly’s Spanish Oral class for k-3rd students who already have some experience with the Spanish language with lively and passionate teaching. "
         primaryButtonText="Sign Up"
-        textOnLeft={false}
         embed="https://www.youtube.com/embed/LzaSVRNI4GQ?rel=0"
       />
       <MainFeature1
@@ -34,7 +33,17 @@ export default () => {
         buttonRounded={false}
         description="This is Ms. Molly’s beginning level Spanish Oral class for k-1st graders with no prior experience with the Spanish language. "
         primaryButtonText="Sign Up"
+        textOnLeft={false}
+
         embed="https://www.youtube.com/embed/0frqTuyUEyA"
+      />
+       <MainFeature1
+        subheading={<Subheading>Ms. Brenda</Subheading>}
+        heading={ <Heading> Math  <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
+        description="This is Ms. Brenda's Singapore Math Intensive Practice for Third Graders where students utilize logic and mathematical knowledge to solve various challenging problems."
+        buttonRounded={false}
+        primaryButtonText="Sign Up"
+        embed="https://www.youtube.com/embed/vRJg1ovWzZQ?rel=0"
       />
       <MainFeature1
         subheading={<Subheading>Ms. Uriyah</Subheading>}
