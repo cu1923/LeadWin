@@ -32,9 +32,26 @@ export default () => {
         heading={ <Heading> Math  <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is Ms. Brenda's Singapore Math Intensive Practice for Third Graders where students utilize logic and mathematical knowledge to solve various challenging problems."
         buttonRounded={false}
-        primaryButtonText="Sign Up"
         textOnLeft={false}
+        primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/vRJg1ovWzZQ?rel=0"
+      />
+       <MainFeature1
+        subheading={<Subheading>Ms. Morgan</Subheading>}
+        heading={ <Heading> Math  <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
+        description="This is Ms. Morgan's 7th English class which mainly focuses on Literature Appreciation & Analysis. The class clip discusses reasons against the death penalty which the students have been debating about in class."
+        buttonRounded={false}
+        primaryButtonText="Sign Up"
+        embed="https://www.youtube.com/embed/jGN65MCEHlE?rel=0"
+      />
+      <MainFeature1
+        subheading={<Subheading>Ms. Johanna</Subheading>}
+        heading={ <Heading> Math  <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
+        description="This is Ms. Johanna's 3rd grade English class, mainly focusing on reading comprehension and writing. The class is to learn about Drama and use role-playing to strengthen reading comprehension."
+        buttonRounded={false}
+        textOnLeft={false}
+        primaryButtonText="Sign Up"
+        embed="https://www.youtube.com/embed/F_4W7nAphbk?rel=0"
       />
       <MainFeature1
         subheading={<Subheading>Ms. Uriyah</Subheading>}
@@ -62,19 +79,28 @@ export default () => {
         embed="https://www.youtube.com/embed/7OVZDnVhboY?rel=0"
       />
       <MainFeature1
+        subheading={<Subheading>Ms. Brittany</Subheading>}
+        heading={ <Heading> Spanish  <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
+        description="This is Ms. Brittany's Intermediate Level Spanish class, the kids have already finished the Beginning level. The class is to go over and review some recently learned vocabulary. "
+        buttonRounded={false}
+        textOnLeft={false}
+        primaryButtonText="Sign Up"
+        embed="https://www.youtube.com/embed/FYAKZ-Tuthg?rel=0"
+      />
+      <MainFeature1
         subheading={<Subheading>Ms. Frances</Subheading>}
         heading="English"
         description="This is Ms. Frannie's English class aiming to enhance students' English listening, writing and speaking skills with both professionalism and approachablility.  "
         buttonRounded={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/2pUcEx8EOdA?rel=0"
-        textOnLeft={false}
       />
       <MainFeature1
         subheading={<Subheading>Ms. Cici</Subheading>}
         heading={ <Heading> Chinese <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is Ms. Cici's second level Chinese class in the 6-level Chinese language course system with a prerequisite of level 1. Students will focus on listening, reading and speaking the Chinese language."
         buttonRounded={false}
+        textOnLeft={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/H1Lo9JzC_SU?rel=0"
       />
@@ -84,14 +110,14 @@ export default () => {
         buttonRounded={false}
         description="This is Ms. Molly’s beginning level Spanish Oral class for k-1st graders with no prior experience with the Spanish language. "
         primaryButtonText="Sign Up"
-        textOnLeft={false}
-        embed="https://www.youtube.com/embed/0frqTuyUEyA"
+        embed="https://www.youtube.com/embed/0frqTuyUEyA?rel=0"
       />
       <MainFeature1
         subheading={<Subheading>Ms. Genevieve</Subheading>}
         heading={ <Heading> Spanish <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is Ms. Gen's beginning level Spanish class for lowerclass students who have some prior experience with Spanish and are hoping to expand vocabulary and understanding."
         buttonRounded={false}
+        textOnLeft={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/jZ1jvT3ulfI?rel=0"
       />

@@ -7,8 +7,8 @@ import { SectionHeading as Heading, Subheading as SubheadingBase } from "compone
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
 import { PrimaryButton } from "components/misc/Buttons";
-import ReactDOM from 'react-dom'
 import ModalVideo from 'react-modal-video'
+import '../../../node_modules/react-modal-video/scss/modal-video.scss';
 
 const Subheading = tw(SubheadingBase)`text-center`;
 const Testimonials = tw.div`flex flex-col lg:flex-row items-center lg:items-stretch`;
@@ -33,16 +33,11 @@ export default ({
   heading = "Teachers",
   testimonials = [ [] ],
   description= "",
-  bi = false
+  bi = false,
 }) => {
-  const [isOpen, setOpen] = useState(false)
+  const [currDemo, setCurrDemo] = useState("none");
   return (
     <Container>
-      <React.Fragment>
-			<ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
-
-			<button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
-		</React.Fragment>
       <ContentWithPaddingXl>
         {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading> 
@@ -57,7 +52,10 @@ export default ({
                       <Image src={teacher.imageSrc} />
                       <Quote>"{teacher.quote}"</Quote>
                       <CustomerName>- {teacher.customerName} {teacher.bi && <span tw="text-primary-800"> (Bilingual)</span>} </CustomerName><br></br>
-                      <PrimaryButton as="a" href="/demo"> view demo</PrimaryButton>
+                      {((currDemo === teacher.customerName) && (teacher.embed)) && <React.Fragment>
+                        <ModalVideo channel='youtube' autoplay isOpen={true} videoId={teacher.embed} onClose={() => setCurrDemo("none")} />
+                      </React.Fragment>}
+                      <PrimaryButton onClick={()=> setCurrDemo(teacher.customerName)}>VIEW DEMO</PrimaryButton>
                     </Testimonial>
                   </TestimonialContainer>
                 )
