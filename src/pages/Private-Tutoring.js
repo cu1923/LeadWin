@@ -6,10 +6,7 @@ import styled from "styled-components";
 import Header from "components/headers/light.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Programs from "components/features/TwoColWithTwoHorizontalFeaturesAndButton"
-
-import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
-import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
-import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+import pic1 from "images/private1.jpeg"
 
 const subjects = ["English & Math", "History & Social Studies", "Biology, Chemistry & Physics", "Languages"]
 
@@ -66,7 +63,7 @@ export default () => {
                     </>
                 )}
                 features = {[[]]}
-                imageSrc="" 
+                imageSrc={pic1} 
                 description="English and Math tutoring for k-12th students at different levels. Tailored course content based on student’s results of the evaluation test, ensures that both academic and individual needs are satisfied alongside aid to school work. "                        
             />
         </Element>

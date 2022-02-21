@@ -5,11 +5,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import Header from "components/headers/light.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
-import Programs from "components/features/TwoColWithTwoHorizontalFeaturesAndButton"
-
-import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
-import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
-import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+import pic from "images/testprep.jpeg"
 
 const subjects = []
 
@@ -26,6 +22,10 @@ const TabControl = styled.div`
   }
 `;
 const Intro = tw.p`mt-4 text-sm md:text-base lg:text-lg mx-12 my-8 font-medium leading-relaxed text-secondary-100 `;
+const Flyer = tw.div`flex flex-col md:flex-row max-w-screen-xl mx-auto items-center`;
+const Image = styled.img`
+  ${tw`px-72`}
+`;
 
 export default () => {
     const [activeTab, setActiveTab] = useState(subjects[0]);
@@ -57,6 +57,9 @@ export default () => {
         </HeaderRow>
         <Intro> Test-Prep aims to help individuals prepare for all kinds of standardized testing such as PSAT, SAT, ACT, AP(Advanced Placement), IB (International Baccalaureate). Available in private tutoring only.</Intro>
 
+        <Flyer>
+              <Image src={pic} alt="flyer1" />
+        </Flyer>
          <br></br><br></br><br></br>
         <Footer/>
       </AnimationRevealPage>

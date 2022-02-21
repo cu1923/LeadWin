@@ -38,7 +38,7 @@ export default () => {
       />
        <MainFeature1
         subheading={<Subheading>Ms. Morgan</Subheading>}
-        heading={ <Heading> Math  <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
+        heading={ <Heading> English  <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is Ms. Morgan's 7th English class which mainly focuses on Literature Appreciation & Analysis. The class clip discusses reasons against the death penalty which the students have been debating about in class."
         buttonRounded={false}
         primaryButtonText="Sign Up"
@@ -46,7 +46,7 @@ export default () => {
       />
       <MainFeature1
         subheading={<Subheading>Ms. Johanna</Subheading>}
-        heading={ <Heading> Math  <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
+        heading={ <Heading> English  <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is Ms. Johanna's 3rd grade English class, mainly focusing on reading comprehension and writing. The class is to learn about Drama and use role-playing to strengthen reading comprehension."
         buttonRounded={false}
         textOnLeft={false}

@@ -21,6 +21,7 @@ import common from "images/common.png"
 import ap from "images/ap.png"
 import olympiad from "images/olympiad.png"
 import sing from "images/sing.png"
+import privatepic from "images/private2.jpeg"
 
 const subjects = ["English", "Math", "Private Tutoring"]
 const Header1 = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center`;
@@ -75,15 +76,15 @@ const math = [
     ],
     [
         {
-            Icon: olympiad,
-            title: "Maths Olympiad/AMC",
-            iconContainerCss: tw`bg-teal-300 text-teal-800`
-        },
-        {
             Icon: ap,
             title: "Accelerated/\nAdvanced Placement",
             iconContainerCss: tw`bg-teal-300 text-teal-800`
-        }
+        },
+        {
+            Icon: olympiad,
+            title: "Maths Olympiad/AMC",
+            iconContainerCss: tw`bg-teal-300 text-teal-800`
+        } 
     ]
 ]
 
@@ -206,7 +207,7 @@ export default () => {
                 <span tw="text-primary-400">Private Tutoring for All Subjects</span>
                 </>
             )}
-            imageSrc=""
+            imageSrc={privatepic}
             button = "learn more"
             buttonUrl = "/privatetutor"
             description="All subject private tutoring for k-12th. 1on1 and 1on2 setting based on the needs of the students. Personalized and customized courses. Class schedules are flexible, can start at any time."
