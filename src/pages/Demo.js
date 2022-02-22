@@ -55,7 +55,7 @@ export default () => {
       />
       <MainFeature1
         subheading={<Subheading>Ms. Uriyah</Subheading>}
-        heading="Coding Python"
+        heading={ <Heading> Coding <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is Ms. Uriyah's beginning level Python class for students who already have some experience with coding or Scratch and are aiming to advance further into a more difficult language.  "
         buttonRounded={false}
         primaryButtonText="Sign Up"
@@ -106,7 +106,7 @@ export default () => {
       />
       <MainFeature1
         subheading={<Subheading> Ms. Molly</Subheading>}
-        heading="Oral Spanish"
+        heading={ <Heading> Spanish <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         buttonRounded={false}
         description="This is Ms. Molly’s beginning level Spanish Oral class for k-1st graders with no prior experience with the Spanish language. "
         primaryButtonText="Sign Up"
@@ -120,6 +120,14 @@ export default () => {
         textOnLeft={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/jZ1jvT3ulfI?rel=0"
+      />
+      <MainFeature1
+        subheading={<Subheading>Ms. Uriyah</Subheading>}
+        heading={ <Heading> Coding <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
+        description="This is Ms. Uriyah's beginning level Coding class using Scratch. Scrtach is a block-based coding language for younger kids with basic Math skills that can serve as an introduction to language-based coding."
+        buttonRounded={false}
+        primaryButtonText="Sign Up"
+        embed="https://www.youtube.com/embed/m2yttejKF4k?rel=0"
       />
       <Footer />
     </AnimationRevealPage>

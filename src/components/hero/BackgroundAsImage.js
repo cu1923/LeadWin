@@ -9,7 +9,7 @@ import logolink from "../../images/logo-white.jpg";
 
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
-import image from "../../images/bg8.jpeg";
+import image from "../../images/landing1.jpg";
 
 const NavbarDropdownContent = styled.div`
     display: none;
@@ -49,7 +49,7 @@ const StyledHeader = styled(Header)`
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
   background-image: url(${image});
-  opacity:0.8;
+  opacity:0.75;
 `;
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
 

@@ -7,7 +7,7 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import flyer1 from "images/flyer1.jpg"
 import flyer2 from "images/flyer2.jpg"
-import summer1 from "images/summer1.png"
+import summer1 from "images/summer.jpeg"
 import summer2 from "images/summer2.png"
 import summer3 from "images/summer3.png"
 import summer4 from "images/summer4.png"
@@ -28,7 +28,8 @@ const TabControl = styled.div`
 `;
 
 const Image = styled.img`
-  ${tw`px-4`}
+  height: 420px;
+  padding: 30px;
 `;
 
 const Flyer = tw.div`flex flex-col md:flex-row max-w-screen-xl mx-auto items-center`;

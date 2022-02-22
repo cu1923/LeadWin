@@ -20,9 +20,9 @@ import icon4 from "images/icon4.png"
 import icon5 from "images/icon5.png"
 import codingflyer from "images/coding.jpeg"
 import lang from "images/language.jpeg"
-import speech from "images/speaking.jpeg"
-import debate from "images/debate.jpeg"
-import art from "images/art.jpeg"
+import speech from "images/speaking.jpg"
+import debate from "images/Debating.jpg"
+import art from "images/art.png"
 
 
 

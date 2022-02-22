@@ -7,6 +7,9 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Programs from "components/features/TwoColWithTwoHorizontalFeaturesAndButton"
 import pic1 from "images/private1.jpeg"
+import history from "images/history.jpeg"
+import bio from "images/bio.jpeg"
+import lang from "images/languages.jpeg"
 
 const subjects = ["English & Math", "History & Social Studies", "Biology, Chemistry & Physics", "Languages"]
 
@@ -77,7 +80,7 @@ export default () => {
                     </>
                 )}
                 features = {[[]]}
-                imageSrc="" 
+                imageSrc={history}
                 textOnLeft = {false}
                 description="Homework related tutoring and test preparations for subjects of history and social sciences for 6-12th graders.  "                        
             />
@@ -92,7 +95,7 @@ export default () => {
                     </>
                 )}
                 features = {[[]]}
-                imageSrc="" 
+                imageSrc={bio}
                 description="Homework related tutoring and test preparations for subjects of biology, chemistry and physics for 8-12th graders.  "                        
             />
         </Element>
@@ -106,7 +109,7 @@ export default () => {
                     </>
                 )}
                 features = {[[]]}
-                imageSrc="" 
+                imageSrc={lang}
                 textOnLeft = {false}
                 description="Personalized language tutoring including Spanish, Chinese, Korean, French, etc for k-12th students as well as adults. "                        
             />
