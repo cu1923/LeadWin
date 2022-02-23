@@ -52,10 +52,11 @@ export default ({
                       <Image src={teacher.imageSrc} />
                       <Quote>"{teacher.quote}"</Quote>
                       <CustomerName>- {teacher.customerName} {teacher.bi && <span tw="text-primary-800"> (Bilingual)</span>} </CustomerName><br></br>
-                      {((currDemo === teacher.customerName) && (teacher.embed)) && <React.Fragment>
-                        <ModalVideo channel='youtube' autoplay isOpen={true} videoId={teacher.embed} onClose={() => setCurrDemo("none")} />
-                      </React.Fragment>}
-                      <PrimaryButton onClick={()=> setCurrDemo(teacher.customerName)}>VIEW DEMO</PrimaryButton>
+                      {((currDemo === teacher.customerName) && (teacher.embed)) && 
+                        <React.Fragment>
+                          <ModalVideo channel='youtube' autoplay isOpen={true} videoId={teacher.embed} onClose={() => setCurrDemo("none")} />
+                        </React.Fragment>}
+                      { teacher.embed && <PrimaryButton onClick={()=> setCurrDemo(teacher.customerName)}>VIEW DEMO</PrimaryButton>}
                     </Testimonial>
                   </TestimonialContainer>
                 )

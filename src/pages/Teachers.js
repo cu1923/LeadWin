@@ -16,6 +16,7 @@ import yujun from "images/yujun.jpg"
 import nina from "images/nina.jpg"
 import johanna from "images/johanna.png"
 import wilder from "images/wilder.png"
+import kimberly from "images/kimberly.png"
 
 const teachers = [[
     {
@@ -115,6 +116,13 @@ const teachers = [[
         "I am Wilder, a native Spanish speaker with a Bachelor & Masters degree in Music and Literature. I bring forth a unique teaching style that incorporates music into Spanish lessons to facilitate student learning.",
       customerName: "Wilder",
       embed:"7OVZDnVhboY"
+    },
+    {
+      imageSrc:kimberly,
+      quote:
+        "I am an art teacher with my BA in Secondary Art Education from BYU-I. I've been an online art teacher for over three years now and enjoy inspiring and motivating my students to explore diverse art techniques and styles! ",
+      customerName: "Kimberly",
+      embed:"88r1uRB_x8Q"
     }
   ]
 ]

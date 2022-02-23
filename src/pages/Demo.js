@@ -124,7 +124,7 @@ export default () => {
       <MainFeature1
         subheading={<Subheading>Ms. Uriyah</Subheading>}
         heading={ <Heading> Coding <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
-        description="This is Ms. Uriyah's beginning level Coding class using Scratch. Scrtach is a block-based coding language for younger kids with basic Math skills that can serve as an introduction to language-based coding."
+        description="This is Ms. Uriyah's beginning level Coding class using Scratch. Scratch is a block-based coding language for younger kids with basic Math skills that can serve as an introduction to language-based coding."
         buttonRounded={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/m2yttejKF4k?rel=0"
