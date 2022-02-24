@@ -47,17 +47,12 @@ export default () => {
             <Link href="/home">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/contact-us">Contact Us</Link>
-            <Link href="# ">Blog</Link>
-            <Link href="#">Reviews</Link>
           </LinksContainer>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
-              <FacebookIcon />
-            </SocialLink>
-            <SocialLink href="https://linkedin.com">
+            <SocialLink href="https://www.linkedin.com/in/lead-win-91168a22b/">
               <img src={linkedinIcon} alt="linkedin"/>
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            <SocialLink href="https://www.youtube.com/channel/UCjPXvCm3tMOemD6hlyzyGXQ">
               <YoutubeIcon />
             </SocialLink>
           </SocialLinksContainer>

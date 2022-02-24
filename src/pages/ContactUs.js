@@ -34,7 +34,7 @@ export default () => {
             secondDescription: (
               <>
                 <Address>
-                  <AddressLine>link</AddressLine>
+                  <AddressLine> <a tw='text-decoration-line: underline' href="https://www.linkedin.com/in/lead-win-91168a22b/"> Click to visit LinkedIn profile </a></AddressLine>
                 </Address>
               </>
             )
