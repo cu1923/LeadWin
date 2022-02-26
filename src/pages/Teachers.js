@@ -17,6 +17,8 @@ import nina from "images/nina.jpg"
 import johanna from "images/johanna.png"
 import wilder from "images/wilder.png"
 import kimberly from "images/kimberly.png"
+import adriana from "images/adriana.png"
+import natalie from "images/natalie.png"
 
 const teachers = [[
     {
@@ -61,12 +63,10 @@ const teachers = [[
       bi: true
     }, 
     {
-      imageSrc: frances,
+      imageSrc: adriana,
       quote:
-        "I’m a TEFL certified teacher with a Bachelor of Arts in International Studies and over 5 years of experience teaching English in classrooms and online. I am proficient in teaching speaking and reading fluency and comprehension, vocabulary, and many other skills. ",
-      customerName: "Frances",
-      embed:"2pUcEx8EOdA",
-      bi: true
+        "I am currently an English and social studies 6th grade teacher with teaching experience for K-8th. I graduated from Eastern University with a Middle Level Education degree in Mathematics and English. I also use my TEFL certification to tutor.",
+      customerName: "Adriana",
     }
   ], [
     {
@@ -123,6 +123,22 @@ const teachers = [[
         "I am an art teacher with my BA in Secondary Art Education from BYU-I. I've been an online art teacher for over three years now and enjoy inspiring and motivating my students to explore diverse art techniques and styles! ",
       customerName: "Kimberly",
       embed:"88r1uRB_x8Q"
+    },
+    {
+      imageSrc: frances,
+      quote:
+        "I’m a TEFL certified teacher with a Bachelor of Arts in International Studies and over 5 years of experience teaching. I am proficient in teaching speaking and reading fluency and comprehension, vocabulary, and many other skills. ",
+      customerName: "Frances",
+      embed:"2pUcEx8EOdA",
+      bi: true
+    }
+  ],
+  [{
+      imageSrc: natalie,
+      quote:
+        "Hola! Spanish is my first language and I absolutely love teaching. I have been working as a teacher for more than 5 years now. I currently have a teacher associates permit and my major is in Child Development. I make my classroom interactive to encourage participation!",
+      customerName: "Natalie",
+      bi: true
     }
   ]
 ]
