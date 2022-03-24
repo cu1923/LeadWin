@@ -96,6 +96,23 @@ export default () => {
         embed="https://www.youtube.com/embed/2pUcEx8EOdA?rel=0"
       />
       <MainFeature1
+        subheading={<Subheading>Ms. Heather</Subheading>}
+        heading={ <Heading> English <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
+        description="This is English private tutoring for 4th graders, the tutoring session focuses on overcoming student's weaknesses based on both in class assessment and the progress report from school."
+        buttonRounded={false}
+        textOnLeft={false}
+        primaryButtonText="Sign Up"
+        embed="https://www.youtube.com/embed/hEqUqxER8HQ?rel=0"
+      />
+      <MainFeature1
+        subheading={<Subheading>Ms. Rebecca</Subheading>}
+        heading={ <Heading> English <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
+        description="This is the demo class for 1st Grade English, let’s read a fine story and learn some new words together!"
+        buttonRounded={false}
+        primaryButtonText="Sign Up"
+        embed="https://www.youtube.com/embed/KaHqlMclBJM?rel=0"
+      />
+      <MainFeature1
         subheading={<Subheading>Ms. Cici</Subheading>}
         heading={ <Heading> Chinese <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is Ms. Cici's second level Chinese class in the 6-level Chinese language course system with a prerequisite of level 1. Students will focus on listening, reading and speaking the Chinese language."

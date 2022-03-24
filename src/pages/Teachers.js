@@ -19,6 +19,7 @@ import wilder from "images/wilder.png"
 import kimberly from "images/kimberly.png"
 import adriana from "images/adriana.png"
 import natalie from "images/natalie.png"
+import rebecca from "images/rebecca.png"
 
 const teachers = [[
     {
@@ -74,6 +75,7 @@ const teachers = [[
       quote:
         "I’m Heather, dedicated and student-focused educator with six years of teaching experience. Area of specialty includes language arts and literacy. In addition to a Bachelor of Science in Elementary Education, I also hold a (TEFL) certification. ",
       customerName: "Heather",
+      embed:"hEqUqxER8HQ"
     },
     {
       imageSrc:uriyah,
@@ -139,6 +141,13 @@ const teachers = [[
         "Hola! Spanish is my first language and I absolutely love teaching. I have been working as a teacher for more than 5 years now. I currently have a teacher associates permit and my major is in Child Development. I make my classroom interactive to encourage participation!",
       customerName: "Natalie",
       bi: true
+    },
+    {
+      imageSrc: rebecca,
+      quote:
+        "I am a certified teacher with a Bachelor of Science degree in Elementary Education from Grand Canyon University. I have started working in the childcare industry and education since 2015 and have accumulated online teaching experience for two years now!",
+      customerName: "Rebecca",
+      embed:"KaHqlMclBJM",
     }
   ]
 ]
