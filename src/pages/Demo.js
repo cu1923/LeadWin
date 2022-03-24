@@ -88,19 +88,10 @@ export default () => {
         embed="https://www.youtube.com/embed/FYAKZ-Tuthg?rel=0"
       />
       <MainFeature1
-        subheading={<Subheading>Ms. Frances</Subheading>}
-        heading="English"
-        description="This is Ms. Frannie's English class aiming to enhance students' English listening, writing and speaking skills with both professionalism and approachablility.  "
-        buttonRounded={false}
-        primaryButtonText="Sign Up"
-        embed="https://www.youtube.com/embed/2pUcEx8EOdA?rel=0"
-      />
-      <MainFeature1
         subheading={<Subheading>Ms. Heather</Subheading>}
         heading={ <Heading> English <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is English private tutoring for 4th graders, the tutoring session focuses on overcoming student's weaknesses based on both in class assessment and the progress report from school."
         buttonRounded={false}
-        textOnLeft={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/hEqUqxER8HQ?rel=0"
       />
@@ -109,8 +100,17 @@ export default () => {
         heading={ <Heading> English <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is the demo class for 1st Grade English, let’s read a fine story and learn some new words together!"
         buttonRounded={false}
+        textOnLeft={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/KaHqlMclBJM?rel=0"
+      />
+      <MainFeature1
+        subheading={<Subheading>Ms. Frances</Subheading>}
+        heading="English"
+        description="This is Ms. Frannie's English class aiming to enhance students' English listening, writing and speaking skills with both professionalism and approachablility.  "
+        buttonRounded={false}
+        primaryButtonText="Sign Up"
+        embed="https://www.youtube.com/embed/2pUcEx8EOdA?rel=0"
       />
       <MainFeature1
         subheading={<Subheading>Ms. Cici</Subheading>}
