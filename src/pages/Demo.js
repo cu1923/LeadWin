@@ -105,11 +105,19 @@ export default () => {
         embed="https://www.youtube.com/embed/KaHqlMclBJM?rel=0"
       />
       <MainFeature1
+        subheading={<Subheading>Ms. Samantha</Subheading>}
+        heading={ <Heading> English <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
+        description="This is Ms.Samantha's 1on1 private tutoring session for a 2nd grader. The course focuses on Phonics, vocabulary building, readying fluency and grammar. "
+        buttonRounded={false}
+        primaryButtonText="Sign Up"
+        textOnLeft={false}
+        embed="https://www.youtube.com/embed/veOXrqlN0K0?rel=0"
+      />
+      <MainFeature1
         subheading={<Subheading>Ms. Frances</Subheading>}
         heading="English"
         description="This is Ms. Frannie's English class aiming to enhance students' English listening, writing and speaking skills with both professionalism and approachablility.  "
         buttonRounded={false}
-        textOnLeft={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/2pUcEx8EOdA?rel=0"
       />
@@ -118,16 +126,17 @@ export default () => {
         heading={ <Heading> Chinese <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is Ms. Cici's second level Chinese class in the 6-level Chinese language course system with a prerequisite of level 1. Students will focus on listening, reading and speaking the Chinese language."
         buttonRounded={false}
+        textOnLeft={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/H1Lo9JzC_SU?rel=0"
       />
+      
       <MainFeature1
         subheading={<Subheading> Ms. Molly</Subheading>}
         heading={ <Heading> Spanish <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         buttonRounded={false}
         description="This is Ms. Molly’s beginning level Spanish Oral class for k-1st graders with no prior experience with the Spanish language. "
         primaryButtonText="Sign Up"
-        textOnLeft={false}
         embed="https://www.youtube.com/embed/0frqTuyUEyA?rel=0"
       />
       <MainFeature1
@@ -136,6 +145,7 @@ export default () => {
         description="This is Ms. Gen's beginning level Spanish class for lowerclass students who have some prior experience with Spanish and are hoping to expand vocabulary and understanding."
         buttonRounded={false}
         primaryButtonText="Sign Up"
+        textOnLeft={false}
         embed="https://www.youtube.com/embed/jZ1jvT3ulfI?rel=0"
       />
       <MainFeature1
@@ -143,7 +153,6 @@ export default () => {
         heading={ <Heading> Coding <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is Ms. Uriyah's beginning level Coding class using Scratch. Scratch is a block-based coding language for younger kids with basic Math skills that can serve as an introduction to language-based coding."
         buttonRounded={false}
-        textOnLeft={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/m2yttejKF4k?rel=0"
       />
@@ -152,6 +161,7 @@ export default () => {
         heading={ <Heading> Spanish  <Subheading tw="text-primary-700 text-xl">Clip from Class</Subheading> </Heading>}
         description="This is Ms. Brittany's Intermediate Level Spanish class, the kids have already finished the Beginning level. The class is to go over and review some recently learned vocabulary. "
         buttonRounded={false}
+        textOnLeft={false}
         primaryButtonText="Sign Up"
         embed="https://www.youtube.com/embed/FYAKZ-Tuthg?rel=0"
       />

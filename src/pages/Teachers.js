@@ -20,6 +20,7 @@ import kimberly from "images/kimberly.png"
 import adriana from "images/adriana.png"
 import natalie from "images/natalie.png"
 import rebecca from "images/rebecca.png"
+import samantha from "images/samantha.png"
 
 const teachers = [[
     {
@@ -148,6 +149,13 @@ const teachers = [[
         "I am a certified teacher with a Bachelor of Science degree in Elementary Education from Grand Canyon University. I have started working in the childcare industry and education since 2015 and have accumulated online teaching experience for two years now!",
       customerName: "Rebecca",
       embed:"KaHqlMclBJM",
+    },
+    {
+      imageSrc: samantha,
+      quote:
+        "My name is Samantha. I hold a B.A degree in Elementary Education and on-going Master.  I have been a teacher for 3 years with both valid Teaching certificate and TESOL Certification. I am very excited to be part of your children’s learning journey!",
+      customerName: "Samantha",
+      embed:"veOXrqlN0K0",
     }
   ]
 ]
