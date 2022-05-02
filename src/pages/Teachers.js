@@ -21,6 +21,7 @@ import adriana from "images/adriana.png"
 import natalie from "images/natalie.png"
 import rebecca from "images/rebecca.png"
 import samantha from "images/samantha.png"
+import nelly from "images/nelly.png"
 
 const teachers = [[
     {
@@ -157,7 +158,15 @@ const teachers = [[
       customerName: "Samantha",
       embed:"veOXrqlN0K0",
     }
-  ]
+  ],
+  [{
+    imageSrc: nelly,
+    quote:
+      "Hola! I am a native Spanish speaker. I have taught elementary grades for three years in Oklahoma. My education and prior teaching experiences have allowed me to teach and connect with my students in very critical ways. I love teaching and seeing the students make connections and enjoy what they learn!",
+    customerName: "Nelly",
+    bi: true
+  },
+]
 ]
 
 export default () => {
